@@ -1,0 +1,37 @@
+// Sass built-in modules
+@use "sass:color";
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+
+//Colours 
+:root {
+    /* Brand Colours */
+    --obsidian: #0D0D0D;
+    --jet: #1A1A1A;
+    --graphite: #2E2E2E;
+    --ivory: #F5F4EF;
+    --white: #FFFFFF;
+    --accent: #E8C547;
+
+    /* Text */
+    --color-text-primary: #0D0D0D;
+    --color-text-secondary: #FFFFFF;
+    --color-text-tertiary: #E8C547;
+
+    /* Spacing scale */
+
+    /* UI */
+
+}
+
+// Typography
+$font-primary: 'Bricolage Grotesque', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+$font-secondary: 'Inter', 'Playfair Display', serif;
+
+// Breakpoints
+$mobile: 768px !default;
+$tablet: 1024px !default;
+$desktop: 1200px !default;
+
+
