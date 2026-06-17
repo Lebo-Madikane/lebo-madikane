@@ -19,9 +19,9 @@ export default function Header() {
                 {/* Desktop Navigation */}
                 <nav className={styles.nav}>
                     <Link href="/#about" className={styles.navLink}>About</Link>
-                    <Link href="/#services" className={styles.navLink}>Projects</Link>
+                    <Link href="/#projects" className={styles.navLink}>Projects</Link>
                     <Link href="/#contact" className={styles.navLink}>Contact</Link>
-                    <Link href="/#services" className={styles.navLink}>Blog</Link>
+                    <Link href="/blogpage" className={styles.navLink}>Blog</Link>
                 </nav>
 
                 {/* Mobile Menu Button */}
@@ -47,7 +47,7 @@ export default function Header() {
                         Contact
                     </Link>
                     <Link href="/#contact" className={styles.mobileNavLink} onClick={toggleMenu}>
-                        Blog
+                        Blog 
                     </Link>
                 </nav>
             </div>

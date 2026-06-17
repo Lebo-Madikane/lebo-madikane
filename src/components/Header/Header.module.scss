@@ -2,13 +2,16 @@
 @use '../../styles/mixins' as *;
 
 .header {
-    //background-color: var(--white);
-    //box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    min-height: 75px;
+    margin: 10 auto 0 auto;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    //box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    //border-radius: 50px;
+    //border: 1px solid rgba(0, 0, 0, 0.1);
 
     .container {
         width: 98%;
@@ -22,7 +25,8 @@
 // Desktop Navigation
 .nav {
     display: flex;
-    gap: 2rem;
+    gap: 5rem;
+    padding: 5px;
 
     @include mobile {
         display: none;
@@ -31,29 +35,14 @@
 
 .navLink {
     font-weight: 500;
-    transition: color 0.3s ease;
+    transition: 0.5s;
     position: relative;
     //font-family: $font-secondary;
 
     &:hover {
-        color: var(--color-accent);
-        transition: color 0.3s ease;
-    }
-
-    // Active/hover underline effect
-    &::after {
-        content: '';
-        position: absolute;
-        bottom: -5px;
-        left: 0;
-        width: 0;
-        height: 2px;
-        background-color: var(--accent-color);
-        transition: width 0.3s ease;
-    }
-
-    &:hover::after {
-        width: 100%;
+        font-size: 1.2em;
+        color: var(--accent);
+        transition: 0.5s;
     }
 }
 
