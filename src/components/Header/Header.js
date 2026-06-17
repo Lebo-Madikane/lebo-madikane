@@ -1,7 +1,7 @@
-'use client'
-import { useState } from 'react'
-import Link from 'next/link'
-import styles from './Header.module.scss'
+'use client';
+import { useState } from 'react';
+import Link from 'next/link';
+import styles from './Header.module.scss';
 
 export default function Header() {
     const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -13,8 +13,6 @@ export default function Header() {
     return (
         <header className={styles.header}>
             <div className={styles.container}>
-                {/* Logo */}
-
 
                 {/* Desktop Navigation */}
                 <nav className={styles.nav}>
