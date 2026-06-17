@@ -1,0 +1,52 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.hero {
+    width: 100%;
+    height: calc(100vh - 85px);
+    margin-top: 85px;
+    border: 2px solid red;
+}
+
+.container {
+    height: 100%;
+    border: 2px solid yellow;
+}
+
+.content {
+    height: 94%;
+    border: 2px solid green;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+
+    .text {
+        width: 25%;
+        height: 40%;
+        align-self: center;
+        border: 2px solid orange;
+
+        @include mobile{
+            width: 90%;
+            height: 20%;
+            margin-top: 50px;
+        }
+    }
+
+    .image {
+        width: 40%;
+        height: 90%;
+        border: 2px solid red;
+
+        @include mobile {
+            width: 90%;
+            height: 60%;
+        }
+    }
+}
+
+.attributes {
+    height: 6%;
+    border: 2px solid black;
+}
