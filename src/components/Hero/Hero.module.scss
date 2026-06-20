@@ -7,6 +7,10 @@
     margin-top: 85px;
     position: relative;
     border: 2px solid red;
+
+    @include mobile {
+        overflow-x: hidden;
+    }
 }
 
 .container {
