@@ -83,8 +83,8 @@ export default function About() {
                     </div>
                     <div className={styles.aboutBottom}>
                         <p className={styles.aboutMeText}>
-                            My name is Lebo, I am passionate to empower individuals and businesses to develop professionally.<br />
-                            Through creative designs, I am a Web Developer and Content Creator.
+                            My name is Lebo, I am passionate to empower individuals and businesses to develop professionally.<br /><span className={styles.breakText}>
+                                Through creative designs, I am a Software Engineer and Content Creator.</span>
                         </p>
                     </div>
                 </Card>
@@ -95,7 +95,7 @@ export default function About() {
                         <div className={styles.image}></div>
                     </div>
                     <div className={`${styles.aboutBottom} ${styles.btns}`}>
-                        <Button>Hire Me</Button>
+                        <Button>Hire Me..</Button>
                         <Button variant='tertiary' size='xs'>
                             View Resume <FontAwesomeIcon className={styles.icon} icon={faArrowRight} />
                         </Button>
