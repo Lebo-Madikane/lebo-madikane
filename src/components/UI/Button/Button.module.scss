@@ -52,7 +52,26 @@
     }
 }
 
+.tertiary {
+    color: var(--obsidian);
+    background: transparent;
+    border-bottom: 1px solid var(--obsidian);
+    border-radius: 0px;
+
+    &:hover {
+        color: var(--accent);
+        border-radius: 0px;
+
+        border-bottom: 1px solid var(--accent);
+    }
+}
+
 /* Sizes */
+
+.xs {
+    padding: 6px 0px;
+    font-size: 0.9rem;
+}
 
 .sm {
     padding: 4px 10px;
