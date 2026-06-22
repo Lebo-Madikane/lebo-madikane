@@ -6,7 +6,6 @@
     height: calc(100vh - 85px);
     margin-top: 85px;
     position: relative;
-    border: 2px solid red;
 
     @include mobile {
         overflow-x: hidden;
@@ -15,12 +14,10 @@
 
 .container {
     height: 100%;
-    border: 2px solid yellow;
 }
 
 .content {
     height: 94%;
-    border: 2px solid green;
     display: flex;
     justify-content: center;
     align-items: flex-end;
@@ -89,7 +86,6 @@
 
 .attributes {
     height: 6%;
-    border: 2px solid black;
 
     .marqueeTrack{
         display: flex;
