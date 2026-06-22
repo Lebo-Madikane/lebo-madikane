@@ -66,6 +66,12 @@ export default function About() {
         return () => window.removeEventListener('resize', recalcOffset);
     }, [recalcOffset]);
 
+    const skills = {
+        skillsOne: ['C', 'Html', 'Css', 'JavaScript', 'React', 'Next.js'],
+        skillsTwo: ['Linux', 'GitHub', 'SQL', 'Sass', 'Redux'],
+        skillsThree: ['Photoshop', 'Canva', 'Figma', 'Ai', 'SEO', 'Analytics'],
+    };
+
     return (
         <section className={styles.about}>
             <div
@@ -122,7 +128,27 @@ export default function About() {
                     <FontAwesomeIcon icon={faChevronRight} />
                 </button>
             </div>
-            <div className={styles.skills}></div>
+            <div className={styles.skillsSection}>
+                <div className={styles.sideFadeLeft}></div>
+                <div className={styles.skillsContainer}>
+                    <div className={`${styles.skillsBg} ${styles.skillsOne}`}>
+                        {skills.skillsOne.map((skill) => 
+                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><h7>{skill}</h7></div>
+                        )}
+                    </div>
+                    <div className={`${styles.skillsBg} ${styles.skillsTwo}`}>
+                        {skills.skillsTwo.map((skill) =>
+                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><h7>{skill}</h7></div>
+                        )}
+                    </div>
+                    <div className={`${styles.skillsBg} ${styles.skillsThree}`}>
+                        {skills.skillsThree.map((skill) =>
+                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><h7>{skill}</h7></div>
+                        )}
+                    </div>
+                </div>
+                <div className={styles.sideFadeRight}></div>
+            </div>
         </section>
     );
 }
