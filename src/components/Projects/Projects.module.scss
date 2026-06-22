@@ -1,0 +1,33 @@
+@use '../../styles/variables' as *;
+@use '../../styles/mixins' as *;
+
+.projects {
+    width: 800px;
+    margin: 6rem auto;
+}
+
+.container {
+    height: fit-content;
+    padding: 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    gap: 2rem;
+}
+
+.cardOne {
+    height: 30%;
+}
+
+.cardTwo {
+    height: 65%;
+}
+
+.cardTop {
+    margin-bottom: 2rem;
+}
+
+.card {
+    width: 320px;
+}
+
