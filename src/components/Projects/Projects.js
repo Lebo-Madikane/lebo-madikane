@@ -40,6 +40,15 @@ export default function Projects() {
                     </Card>
                 </div>
             </div>
+            <div className={styles.atumContainer}>
+                <div className={styles.atumBgLeft}></div>
+                <div className={styles.atumProjectContent}>
+                    <h3>Atum<span>.</span></h3>
+                    <p>A web development & digital marketing agency.</p>
+                    <Button>View Project</Button>
+                </div>
+                <div className={styles.atumBgRight}></div>
+            </div>
         </section>
     )
 }
