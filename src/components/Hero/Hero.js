@@ -21,7 +21,7 @@ export default function Hero() {
             <div className={styles.container}>
                 <div className={styles.content}>
                     <div className={styles.text}>
-                        <p className={styles.firstP}>WEB DEVELOPER · CONTENT CREATOR</p>
+                        <p className={styles.firstP}>SOFTWARE DEVELOPER · CONTENT CREATOR</p>
                         <h1>Hi, I am Lebo<span className={styles.dot}>.</span></h1>
                         <p className={styles.secondP}>Building digital experiences · Founder of Atum.</p>
                         <Button>Let's Work Together <FontAwesomeIcon className={styles.icon} icon={faArrowRight} />
