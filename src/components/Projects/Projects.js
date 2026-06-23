@@ -11,12 +11,33 @@ export default function Projects() {
         <section className={styles.projects}>
             <div className={styles.container}>
                 <div className={styles.columnOne}>
-                    <Card className={`${styles.card} ${styles.cardTop} ${styles.cardOne}`}></Card>
-                    <Card className={`${styles.card} ${styles.cardTwo}`}></Card>
+                    <Card className={`${styles.card} ${styles.cardTop} ${styles.cardOne}`}>
+                        <h2>PROJECTS</h2>
+                        <p>View some of my projects.</p>
+                    </Card>
+                    <Card className={`${styles.card} ${styles.cardTwo} ${styles.card}`}>
+                        <div className={styles.cardText}>
+                            <h4>Dweba Art & Cafe</h4>
+                            <p>Art Gallery</p>
+                            <Button variant='tertiary' size='xs'>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                        </div>
+                    </Card>
                 </div>
                 <div className={styles.columnTwo}>
-                    <Card className={`${styles.card} ${styles.cardTop}`}></Card>
-                    <Card className={styles.card}></Card>
+                    <Card className={`${styles.card} ${styles.cardTop} ${styles.cardThree}`}>
+                        <div className={styles.cardText}>
+                            <h4>Lindani BNB</h4>
+                            <p>Hospitality</p>
+                            <Button variant='tertiary' size='xs'>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                        </div>
+                    </Card>
+                    <Card className={`${styles.card} ${styles.cardFour}`}>
+                        <div className={styles.cardText}>
+                            <h4>Ness Beauty Salon</h4>
+                            <p>Cosmetics</p>
+                            <Button variant='tertiary' size='xs'>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                        </div>
+                    </Card>
                 </div>
             </div>
         </section>

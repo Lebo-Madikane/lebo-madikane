@@ -17,10 +17,38 @@
 
 .cardOne {
     height: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    background-color: var(--obsidian);
+
+    p{
+        color: #ffffff;
+    }
 }
 
 .cardTwo {
     height: 65%;
+    background-image: url(/images/projects/projectImgOnee.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.cardThree {
+    background-image: url(/images/projects/projectImgTwoo.svg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    
+}
+
+.cardFour {
+    background-image: url(/images/projects/projectImgThreee.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .cardTop {
@@ -29,5 +57,32 @@
 
 .card {
     width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.cardText {
+    width: fit-content;
+    color: #ffffff;
+    padding: 10px;
+    margin: 15px;
+
+    p{
+        font-size: 0.80rem;
+        color: var(--ivory);
+    }
+
+    Button {
+        color: #ffffff;
+        margin-left: 5px;
+        border-bottom: 0.1px solid var(--ivory);
+
+        .icon {
+            width: 1.1rem;
+            padding: 2px;
+            margin-left: 5px;
+        }
+    }
 }
 
