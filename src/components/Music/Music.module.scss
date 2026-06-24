@@ -1,0 +1,16 @@
+@use '../../styles/mixins.scss' as *;
+@use '../../styles/variables.scss' as *;
+
+.music {
+    width: 100%;
+    padding: 5px;
+    margin: 8rem auto;
+    border: 2px solid red;
+}
+
+.container {
+    width: 56%;
+    height: 500px;
+    margin: 0 auto;
+    border: 2px solid blue;
+}
