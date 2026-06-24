@@ -31,14 +31,14 @@
 
 .cardTwo {
     height: 65%;
-    background-image: url(/images/projects/projectImgOnee.svg);
+    background-image: url(/images/projects/projectImgOne.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 
 .cardThree {
-    background-image: url(/images/projects/projectImgTwoo.svg);
+    background-image: url(/images/projects/projectImgTwo.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 }
 
 .cardFour {
-    background-image: url(/images/projects/projectImgThreee.svg);
+    background-image: url(/images/projects/projectImgThree.svg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -76,8 +76,8 @@
 
     Button {
         color: #ffffff;
-        margin-left: 5px;
-        border-bottom: 0.1px solid var(--ivory);
+        padding-bottom: 4px;
+        border-bottom: 0.01px solid var(--ivory);
 
         .icon {
             width: 1.1rem;

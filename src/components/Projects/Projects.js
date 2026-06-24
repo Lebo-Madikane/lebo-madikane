@@ -17,25 +17,25 @@ export default function Projects() {
                     </Card>
                     <Card className={`${styles.card} ${styles.cardTwo} ${styles.card}`}>
                         <div className={styles.cardText}>
-                            <h4>Dweba Art & Cafe</h4>
                             <p>Art Gallery</p>
-                            <Button variant='tertiary' size='xs'>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                            <h4>Dweba Art & Cafe</h4>
+                            <Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
                         </div>
                     </Card>
                 </div>
                 <div className={styles.columnTwo}>
                     <Card className={`${styles.card} ${styles.cardTop} ${styles.cardThree}`}>
                         <div className={styles.cardText}>
-                            <h4>Lindani BNB</h4>
                             <p>Hospitality</p>
-                            <Button variant='tertiary' size='xs'>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                            <h4>Lindani BNB</h4>
+                            <Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
                         </div>
                     </Card>
                     <Card className={`${styles.card} ${styles.cardFour}`}>
                         <div className={styles.cardText}>
-                            <h4>Ness Beauty Salon</h4>
                             <p>Cosmetics</p>
-                            <Button variant='tertiary' size='xs'>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                            <h4>Ness Beauty Salon</h4>
+                            <Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
                         </div>
                     </Card>
                 </div>
