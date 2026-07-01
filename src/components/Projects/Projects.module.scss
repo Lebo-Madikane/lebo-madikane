@@ -2,7 +2,7 @@
 @use '../../styles/mixins' as *;
 
 .projects {
-    margin: 6rem auto;
+    margin: 6rem auto 0 auto;
 }
 
 .container {
@@ -90,7 +90,7 @@
 .atumContainer {
     width: 100%;
     height: 300px;
-    margin: 80 auto;
+    margin: 80 auto 0 auto;
     display: flex;
     justify-content: center;
     background: var(--obsidian);
