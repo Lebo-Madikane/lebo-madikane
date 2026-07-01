@@ -11,8 +11,8 @@
 .container {
     color: var(--white);
     width: 56%;
-    min-height: 320px;
-    margin: 0 auto;
+    min-height: fit-content;
+    margin: 35 auto 0 auto;
     align-content: center;
 }
 
@@ -60,13 +60,13 @@
     cursor: pointer;
 
     &:hover {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 }
 
 .footerBottom {
     color: white;
-    margin-top: 60px;
+    padding-top: 20px;
     text-align: center;
 
     p {
