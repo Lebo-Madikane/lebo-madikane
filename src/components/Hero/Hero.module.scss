@@ -86,6 +86,7 @@
 
 .attributes {
     height: 6%;
+    overflow-y: hidden;
 
     .marqueeTrack{
         display: flex;
@@ -100,9 +101,8 @@
             border-radius: 20px;
             margin: 5 10;
             background-color: var(--ivory);
-            
 
-            h7 {
+            span {
                 white-space: nowrap;
                 letter-spacing: 3px;
                 font-size: 0.8rem;

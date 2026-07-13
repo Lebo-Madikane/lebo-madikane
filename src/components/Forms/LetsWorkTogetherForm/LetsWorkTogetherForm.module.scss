@@ -1,0 +1,116 @@
+.formSection {
+    width: 100%;
+    background: rgba(0,0,0, 0.05);
+}
+
+.container {
+    padding: 10px;
+    background: transparent;
+}
+
+.formCard {
+    width: 450px;
+    height: fit-content;
+    margin: 0 auto;
+    padding: 4rem 2rem;
+    text-align: center;
+    align-content: center;
+    background: linear-gradient(145deg, #FFFFFF 0%, #F0EEE8 100%);
+    border: 2px solid var(--white);
+}
+
+.contactFormHeader {
+    span {
+        color: var(--accent);
+        font-size: 0.95rem;
+        padding: 1px 1rem;
+        display: inline-block;
+        margin-bottom: 8px;
+        border: 0.1px solid var(--accent);
+        border-radius: 16px;
+        background-color: rgba(#F5F4EF, 0.5);
+    }
+
+    h3 {
+        color: var(--jet);
+    }
+
+    p {
+        color: var(--graphite);
+    }
+}
+
+.contactFormInfo {
+    height: fit-content;
+    margin-top: 2rem;
+    padding: 25px 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10;
+    background: linear-gradient(180deg, #FFFFFF 0%, #F5F4EF 100%);
+    border: 0.5px solid var(--accent);
+    border-radius: 16px;
+
+
+    .formGroup {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 10;
+
+        .formFullName, .formEmail, .formServices, .formBudget {
+            position: relative;
+            flex: 1;
+            height: 50px;
+            border-radius: 6px;
+            border: 1px solid var(--accent);
+            background: #e8c54715;
+        }
+
+        .formInput {
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            border: none;
+            background: transparent;
+
+            &::placeholder {
+                font-size: 0.9rem;
+                padding: 5px;
+            }
+        }
+
+        .formSelect {
+            color: #797979;
+            font-size: 0.9rem;
+            width: 100%;
+            display: flex;
+            justify-content: flex-start;
+            border: none;
+            background: transparent;
+        }
+    }
+
+    .formDescription{
+        width: 100%;
+        height: 100px;
+        margin: 0 auto;
+        border: 1px solid var(--accent);
+        border-radius: 6px;
+        background: #e8c54715;
+
+        .formTextarea {
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            border: none;
+            background: transparent;
+        }
+    }
+
+    Button {
+        padding: 0.6rem;
+        font-weight: 550;
+    }
+}
