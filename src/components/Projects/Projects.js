@@ -1,6 +1,7 @@
 import styles from './Projects.module.scss';
 import Card from '../UI/Card/Card';
 import Button from '../UI/Button/Button';
+import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -8,7 +9,7 @@ export default function Projects() {
 
 
     return (
-        <section className={styles.projects}>
+        <section id='projects' className={styles.projects}>
             <div className={styles.container}>
                 <div className={styles.columnOne}>
                     <Card className={`${styles.card} ${styles.cardTop} ${styles.cardOne}`}>
@@ -19,7 +20,7 @@ export default function Projects() {
                         <div className={styles.cardText}>
                             <p>Art Gallery</p>
                             <h4>Dweba Art & Cafe</h4>
-                            <Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                            <Link href={'https://www.dwebaart.com/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
                         </div>
                     </Card>
                 </div>
@@ -28,7 +29,7 @@ export default function Projects() {
                         <div className={styles.cardText}>
                             <p>Hospitality</p>
                             <h4>Lindani BNB</h4>
-                            <Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                            <Link href={'https://www.lindanibnb.co.za/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
                         </div>
                     </Card>
                     <Card className={`${styles.card} ${styles.cardFour}`}>

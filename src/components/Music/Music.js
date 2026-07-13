@@ -24,10 +24,10 @@ export default function Music() {
                                 <p className={styles.textTwo}>Deep & Afro-house DJ Sets | Playlists</p>
                             </div>
                             <div className={styles.ctaPlatforms}>
-                                <Link href="https://www.instagram.com/lebo_madikane/" target="_blank" rel="noopener noreferrer" className={`${styles.plartformsBorder} ${styles.soundcloudBg}`}>
+                                <Link href="https://soundcloud.com/lebomadikane" target="_blank" rel="noopener noreferrer" className={`${styles.plartformsBorder} ${styles.soundcloudBg}`}>
                                     <FontAwesomeIcon className={`${styles.icon} ${styles.soundcloud}`} icon={faSoundcloud} />
                                 </Link>
-                                <Link href="https://www.instagram.com/lebo_madikane/" target="_blank" rel="noopener noreferrer" className={`${styles.plartformsBorder} ${styles.spotifyBg}`}>
+                                <Link href="https://open.spotify.com/user/rrw1oyqu9zsi2140dv941qxps" target="_blank" rel="noopener noreferrer" className={`${styles.plartformsBorder} ${styles.spotifyBg}`}>
                                     <FontAwesomeIcon className={`${styles.icon} ${styles.spotify}`} icon={faSpotify} />
                                 </Link>
                             </div>
