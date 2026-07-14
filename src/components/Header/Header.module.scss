@@ -2,7 +2,6 @@
 @use '../../styles/mixins' as *;
 
 .header {
-    //width: 70%;
     min-height: 76px;
     margin: 0 auto;
     position: fixed;
@@ -14,6 +13,7 @@
     //border-radius: 50px;
     backdrop-filter: blur(8px);
     //background: rgba(0, 0, 0, 0.01);
+    border: 2px solid red;
 
     .container {
         width: 98%;

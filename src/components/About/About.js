@@ -3,6 +3,7 @@ import { useState, useRef, useEffect, useCallback } from 'react';
 import styles from './About.module.scss';
 import Card from '../UI/Card/Card';
 import Button from '../UI/Button/Button';
+import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
 
@@ -14,7 +15,7 @@ const cards = [
 const GAP = 16;             // must match SCSS gap value
 const SWIPE_THRESHOLD = 50; // minimum px drag to trigger a slide
 
-export default function About() {
+export default function About({ onHireClick, onResumeClick }) {
     const [activeIndex, setActiveIndex] = useState(0);
     const [offset, setOffset] = useState('0px');
     const containerRef = useRef(null);
@@ -67,13 +68,23 @@ export default function About() {
     }, [recalcOffset]);
 
     const skills = {
-        skillsOne: ['C', 'Html', 'Css', 'JavaScript', 'React', 'Next.js'],
-        skillsTwo: ['Linux', 'GitHub', 'SQL', 'Sass', 'Redux'],
-        skillsThree: ['Photoshop', 'Canva', 'Figma', 'Ai', 'SEO', 'Analytics'],
+        skillsOne: ['Html', 'Css', 'JavaScript', 'React', 'Linux'],
+        skillsTwo: ['Next.js', 'GitHub', 'SQL', 'Sass'],
+        skillsThree: ['Canva', 'Figma', 'Ai', 'SEO', 'Analytics'],
+    };
+
+    const handleGetInTouchClick = () => {
+        // Call the function passed from parent component
+        onHireClick();
+    };
+
+    const handleResumeClick = () => {
+        // Call the function passed from parent component
+        onResumeClick();
     };
 
     return (
-        <section className={styles.about}>
+        <section id='about' className={styles.about}>
             <div
                 ref={containerRef}
                 className={styles.container}
@@ -98,11 +109,13 @@ export default function About() {
                 {/* PROFILE CARD */}
                 <Card className={`${styles.card} ${activeIndex === 1 ? styles.active : styles.hidden}`}>
                     <div className={styles.aboutTop}>
-                        <div className={styles.image}></div>
+                        <div className={styles.image}>
+                            <Image className={styles.image} src='/images/about/PhotoLebo.jpeg' alt="AboutMe Image" width={150} height={100} priority={true} />
+                        </div>
                     </div>
                     <div className={`${styles.aboutBottom} ${styles.btns}`}>
-                        <Button>Hire Me..</Button>
-                        <Button variant='tertiary' size='xs'>
+                        <Button onClick={handleGetInTouchClick} aria-label="Open form">Hire Me..</Button>
+                        <Button variant='tertiary' size='xs' onClick={handleResumeClick} aria-label="Open form">
                             View Resume <FontAwesomeIcon className={styles.icon} icon={faArrowRight} />
                         </Button>
                     </div>
@@ -133,17 +146,17 @@ export default function About() {
                 <div className={styles.skillsContainer}>
                     <div className={`${styles.skillsBg} ${styles.skillsOne}`}>
                         {skills.skillsOne.map((skill) => 
-                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><h7>{skill}</h7></div>
+                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><span>{skill}</span></div>
                         )}
                     </div>
                     <div className={`${styles.skillsBg} ${styles.skillsTwo}`}>
                         {skills.skillsTwo.map((skill) =>
-                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><h7>{skill}</h7></div>
+                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><span>{skill}</span></div>
                         )}
                     </div>
                     <div className={`${styles.skillsBg} ${styles.skillsThree}`}>
                         {skills.skillsThree.map((skill) =>
-                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><h7>{skill}</h7></div>
+                            <div key={skill} className={styles.skillName}><div className={styles.dotted}></div><span>{skill}</span></div>
                         )}
                     </div>
                 </div>
