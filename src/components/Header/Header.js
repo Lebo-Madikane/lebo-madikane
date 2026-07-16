@@ -35,16 +35,16 @@ export default function Header() {
 
                 {/* Mobile Navigation */}
                 <nav className={`${styles.mobileNav} ${isMenuOpen ? styles.open : ''}`}>
-                    <Link href="/" className={styles.mobileNavLink} onClick={toggleMenu}>
+                    <Link href="/#about" className={styles.mobileNavLink} onClick={toggleMenu}>
                         About
                     </Link>
-                    <Link href="/#about" className={styles.mobileNavLink} onClick={toggleMenu}>
+                    <Link href="/#projects" className={styles.mobileNavLink} onClick={toggleMenu}>
                         Projects
                     </Link>
-                    <Link href="/services" className={styles.mobileNavLink} onClick={toggleMenu}>
+                    <Link href="/#contact" className={styles.mobileNavLink} onClick={toggleMenu}>
                         Contact
                     </Link>
-                    <Link href="/#contact" className={styles.mobileNavLink} onClick={toggleMenu}>
+                    <Link href="/" className={styles.mobileNavLink} onClick={toggleMenu}>
                         Blog 
                     </Link>
                 </nav>

@@ -2,24 +2,38 @@
 @use '../../styles/mixins' as *;
 
 .projects {
+    width: 100%;
+    height: auto;
     margin: 6rem auto 0 auto;
-    border: 2px solid red;
+
+    @include mobile {
+        margin: 3rem auto 0 auto;
+    }
 }
 
 .container {
-    //width: fit-content;
-    height: fit-content;
+    width: fit-content;
+    position: relative;
     margin: 0 auto;
-    padding: 5px;
+    padding: 10px;
     display: flex;
     justify-content: center;
     align-content: center;
     gap: 2rem;
-    border: 2px solid blue;
+
+    @include mobile {
+        gap: 1rem;
+
+        .columnOne, .columnTwo {
+            width: 50%;
+            height: 340px;
+        }
+    }
 }
 
 .cardOne {
     height: 30%;
+    align-items: center;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -29,6 +43,10 @@
     p{
         color: #ffffff;
     }
+
+        @include mobile {
+            height: 50%;
+        }
 }
 
 .cardTwo {
@@ -37,6 +55,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include mobile {
+        height: 60%;
+    }
 }
 
 .cardThree {
@@ -44,6 +66,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include mobile {
+        height: 60%;
+    }
     
 }
 
@@ -52,6 +78,10 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+
+    @include mobile {
+        height: 50%;
+    }
 }
 
 .cardTop {
@@ -60,14 +90,21 @@
 
 .card {
     width: 360px;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: end;
-    border: 2px solid red;
 
     @include mobile {
-        border: 2px solid green;
-        width: fit-content;
+        width: 100%;
+
+        h2 {
+            font-size: 1.6rem;
+        }
+
+        p{
+            font-size: 0.9rem;
+        }
     }
 }
 
@@ -93,6 +130,12 @@
             margin-left: 5px;
         }
     }
+
+    @include mobile {
+        h4 {
+            font-size: 0.9rem;
+        }
+    }
 }
 
 .atumContainer {
@@ -103,12 +146,33 @@
     justify-content: center;
     background: var(--obsidian);
 
+    @include mobile {
+        margin-top: 6rem;
+    }
+
     .atumBgLeft {
         width: 22%;
         background-image: url(/images/projects/atumBgLeft.svg);
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+        
+        @include mobile {
+            display: none;
+        }
+    }
+
+    .atumBgLeftMobile {
+        display: none;
+
+        @include mobile {
+            display: inline-block;
+            width: 15%;
+            background-image: url(/images/projects/atumBgLeftMobile.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 
     .atumProjectContent {
@@ -129,6 +193,23 @@
             color: #ffffff;
             margin: 0 auto 15 auto;
         }
+
+        @include mobile {
+            width: 70%;
+        }
+    }
+
+    .atumBgRightMobile {
+        display: none;
+    
+        @include mobile {
+            display: inline-block;
+            width: 15%;
+            background-image: url(/images/projects/atumBgRightMobile.svg);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
     }
 
     .atumBgRight {
@@ -137,5 +218,10 @@
         background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
+
+        @include mobile {
+            display: none;
+        }
     }
+
 }

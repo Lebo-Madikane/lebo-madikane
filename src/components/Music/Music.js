@@ -14,6 +14,7 @@ export default function Music() {
                     <div className={styles.contentContainer}>
                         <div className={styles.header}>
                             <h2>Let's Play House</h2>
+                            <span className={styles.forMobile}>Curated Deep & Afro-house Music</span>
                         </div>
                         <div className={styles.images}>
                             <Image className={styles.img} src='/images/music/musicImage1.svg' alt="Music Image" width={150} height={100} priority={true} />
@@ -21,7 +22,7 @@ export default function Music() {
                         <div className={styles.cta}>
                             <div className={styles.ctaText}>
                                 <p className={styles.nowStreaming}>NOW STREAMING</p>
-                                <p className={styles.textTwo}>Deep & Afro-house DJ Sets | Playlists</p>
+                                <p className={styles.textTwo}><span className={styles.textTwoMobile}>Deep & Afro-house</span> DJ Sets | Playlists</p>
                             </div>
                             <div className={styles.ctaPlatforms}>
                                 <Link href="https://soundcloud.com/lebomadikane" target="_blank" rel="noopener noreferrer" className={`${styles.plartformsBorder} ${styles.soundcloudBg}`}>
