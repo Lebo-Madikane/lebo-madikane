@@ -38,7 +38,7 @@ export default function Projects() {
                         <div className={styles.cardText}>
                             <p>Cosmetics</p>
                             <h4>Hair Salon</h4>
-                            <Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                            <Link href={'https://ness-beauty-salon-xvzl0xbaa-lebos-projects-51dc900f.vercel.app/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
                         </div>
                     </Card>
                 </div>
@@ -49,7 +49,7 @@ export default function Projects() {
                 <div className={styles.atumProjectContent}>
                     <h3>Atum<span>.</span></h3>
                     <p>A software development & digital marketing agency.</p>
-                    <Button>View Project</Button>
+                    <Link href={'https://atum-iota.vercel.app/'} target='_blank'><Button>View Project</Button></Link>
                 </div>
                 <div className={styles.atumBgRightMobile}></div>
                 <div className={styles.atumBgRight}></div>
