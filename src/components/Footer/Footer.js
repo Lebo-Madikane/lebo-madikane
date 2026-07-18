@@ -20,7 +20,7 @@ export default function Footer() {
                         <Link href="#hero" className={styles.links}>Home</Link>
                         <Link href="#projects" className={styles.links}>Projects</Link>
                         <Link href="mailto:madikanelebohang@gmail.com" className={styles.links}>Email</Link>
-                        <Link href="/portfolio/blog-page.html" target="_blank" rel="noopener noreferrer" className={styles.links}>Blog</Link>
+                        <Link href="/blog" target="_blank" rel="noopener noreferrer" className={styles.links}>Blog</Link>
                     </div>
                 </div>
                 <div className={styles.footerBottom}>
