@@ -21,7 +21,7 @@ export default function Projects() {
                     <Card className={`${styles.card} ${styles.cardTwo} ${styles.card}`}>
                         <div className={styles.cardText}>
                             <p>Art Gallery</p>
-                            <h4>Dweba Art</h4>
+                            <h4>Art & Events</h4>
                             <Link href={'https://www.dwebaart.com/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
                         </div>
                     </Card>
@@ -30,14 +30,14 @@ export default function Projects() {
                     <Card className={`${styles.card} ${styles.cardTop} ${styles.cardThree}`}>
                         <div className={styles.cardText}>
                             <p>Hospitality</p>
-                            <h4>Lindani BNB</h4>
+                            <h4>B&B</h4>
                             <Link href={'https://www.lindanibnb.co.za/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
                         </div>
                     </Card>
                     <Card className={`${styles.card} ${styles.cardFour}`}>
                         <div className={styles.cardText}>
                             <p>Cosmetics</p>
-                            <h4>Ness Salon</h4>
+                            <h4>Hair Salon</h4>
                             <Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
                         </div>
                     </Card>
