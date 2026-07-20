@@ -110,7 +110,7 @@ export default function About({ onHireClick, onResumeClick }) {
                 <Card className={`${styles.card} ${activeIndex === 1 ? styles.active : styles.hidden}`}>
                     <div className={styles.aboutTop}>
                         <div className={styles.image}>
-                            <Image className={styles.image} src='/images/about/PhotoLebo.jpeg' alt="AboutMe Image" width={150} height={100} priority={true} />
+                            <Image className={styles.image} src='/images/about/LinkedIn.png' alt="AboutMe Image" width={150} height={100} priority={true} />
                         </div>
                     </div>
                     <div className={`${styles.aboutBottom} ${styles.btns}`}>
