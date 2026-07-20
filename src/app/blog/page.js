@@ -11,6 +11,7 @@ export default function Blog() {
             <div className={styles.blogContainer}>
                 <h1>BLOG PAGE</h1>
                 <p>If you're visiting this page, you're part of the development.</p>
+                <p>Articles publishing soon!</p>
             </div>
             <Contact />
             <Footer />
