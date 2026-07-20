@@ -69,7 +69,7 @@ export default function About({ onHireClick, onResumeClick }) {
 
     const skills = {
         skillsOne: ['Html', 'Css', 'JavaScript', 'React', 'Linux'],
-        skillsTwo: ['Next.js', 'GitHub', 'SQL', 'Sass'],
+        skillsTwo: ['Next.js', 'GitHub', 'SQL', 'UI/UX'],
         skillsThree: ['Canva', 'Figma', 'Ai', 'SEO', 'Analytics'],
     };
 
