@@ -13,7 +13,7 @@ export default function Music() {
                 <div className={styles.content}>
                     <div className={styles.contentContainer}>
                         <div className={styles.header}>
-                            <h2>Let's Play House</h2>
+                            <h2 className={styles.headerH2}>Let's Play House</h2>
                             <span className={styles.forMobile}>Curated Deep & Afro-house Music</span>
                         </div>
                         <div className={styles.images}>
