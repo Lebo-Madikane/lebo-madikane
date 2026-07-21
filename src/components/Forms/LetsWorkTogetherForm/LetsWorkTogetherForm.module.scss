@@ -3,13 +3,16 @@
 
 
 .formSection {
+    width: 450px;
+    height: 550px;
     background: rgba(0,0,0, 0.05);
     border: 2px solid red;
     border-radius: 16px;
 }
 
 .container {
-    height: 100%;
+    width: 450px;
+    height: 550px;
     background: transparent;
     border: 2px solid green;
     border-radius: 16px;
