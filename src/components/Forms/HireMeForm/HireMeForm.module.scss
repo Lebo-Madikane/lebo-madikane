@@ -12,14 +12,14 @@
 }
 
 .formCard {
-    height: 550px;
+    height: 100% !important;
     margin: 0 auto;
     padding: 4rem 2rem;
     text-align: center;
     align-content: center;
     background: linear-gradient(145deg, #FFFFFF 0%, #F0EEE8 100%);
     border: 2px solid var(--white);
-    border: 2px solid red;
+    border: 2px solid red !important;
 }
 
 .contactFormHeader {
