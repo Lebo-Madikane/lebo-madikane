@@ -3,13 +3,16 @@
 
 
 .formSection {
-    width: 100%;
+    width: fit-content;
     background: rgba(0,0,0, 0.05);
+    border: 2px solid red;
+    border-radius: 16px;
 }
 
 .container {
-    padding: 10px;
     background: transparent;
+    border: 2px solid green;
+    border-radius: 16px;
 }
 
 .formCard {
@@ -21,6 +24,7 @@
     align-content: center;
     background: linear-gradient(145deg, #FFFFFF 0%, #F0EEE8 100%);
     border: 2px solid var(--white);
+    border: 2px solid yellow;
 }
 
 .contactFormHeader {
