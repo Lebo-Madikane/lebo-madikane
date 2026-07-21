@@ -12,7 +12,7 @@ export default function Footer() {
                 <div className={styles.socialIcons}>
                     <Link href="https://github.com/Lebo-Madikane" target="_blank" rel="noopener noreferrer" className={styles.icons}><FontAwesomeIcon className={styles.icon} icon={faGithub} /></Link>
                     <Link href="https://www.linkedin.com/in/lebo-madikane/" target="_blank" rel="noopener noreferrer" className={styles.icons}><FontAwesomeIcon className={styles.icon} icon={faLinkedin} /></Link>
-                    <Link href="https://twitter.com/Madikane_Lebo" target="_blank" rel="noopener noreferrer" className={styles.icons}><FontAwesomeIcon className={styles.icon} icon={faXTwitter} /></Link>
+                    <Link href="https://x.com/Lebo_madikane" target="_blank" rel="noopener noreferrer" className={styles.icons}><FontAwesomeIcon className={styles.icon} icon={faXTwitter} /></Link>
                     <Link href="https://www.instagram.com/lebo_madikane/" target="_blank" rel="noopener noreferrer" className={styles.icons}><FontAwesomeIcon className={styles.icon} icon={faInstagram} /></Link>
                 </div>
                 <div>
