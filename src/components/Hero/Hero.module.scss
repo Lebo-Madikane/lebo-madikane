@@ -6,7 +6,6 @@
     height: calc(100vh - 85px);
     margin-top: 85px;
     position: relative;
-    border: 2px solid green;
 
     @include mobile {
         overflow-x: hidden;
@@ -14,9 +13,7 @@
 }
 
 .container {
-    height: 100%;
-
-    border: 2px solid orange;
+    height: 100%;;
 }
 
 .content {
@@ -26,7 +23,6 @@
     align-items: flex-end;
     flex-wrap: wrap;
     line-height: 1.3;
-    border: 2px solid yellow;
 
     .text {
         align-self: center;
@@ -36,7 +32,6 @@
         position: absolute;
         left: 25%;
         z-index: 19;
-        border: 2px solid yellow;
         
 
         .firstP {
@@ -75,12 +70,10 @@
         }
 
         @include mobile{
-            //width: 90%;
             text-align: center;
-            //height: 30%;
-            //margin-top: 80px;
-            position: static;
-            border: 2px solid red;
+            //position: static;
+            top: 4rem;
+            left: auto;
         }
     }
 
@@ -90,19 +83,16 @@
         position: absolute;
         right: 15%;
         z-index: 10;
-        border: 2px solid black;
 
         .img {
             width: 100%;
             object-fit: contain;
-            border: 2px solid red;
         }
 
         @include mobile {
             position: static;
             width: 100%;
             height: fit-content;
-            border: 2px solid red;
         }
     }
 }
@@ -110,7 +100,6 @@
 .attributes {
     //height: 6%;
     overflow-x: hidden;
-    border: 2px solid blue;
 
     .marqueeTrack{
         display: flex;
