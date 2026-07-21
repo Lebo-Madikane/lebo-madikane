@@ -93,12 +93,12 @@ export default function ViewResumeForm() {
                     {/* Status Messages */}
                     {submitStatus === 'success' && (
                         <div className={styles.successMessage}>
-                            ✅ Thank you! We've received your booking request and will contact you within 24 hours to confirm
+                            ✅ Thank you! We've received your request and will contact you within 24 hours.
                         </div>
                     )}
                     {submitStatus === 'error' && (
                         <div className={styles.errorMessage}>
-                            ❌ Something went wrong while submitting your request. Please try again or contact us directly at li
+                            ❌ Something went wrong while submitting your request. Please try again or contact us directly.
                         </div>
                     )}
 

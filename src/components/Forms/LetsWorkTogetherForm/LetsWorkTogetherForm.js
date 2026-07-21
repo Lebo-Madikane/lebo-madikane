@@ -103,12 +103,12 @@ export default function LetsWorkTogetherForm() {
                     {/* Status Messages */}
                     {submitStatus === 'success' && (
                         <div className={styles.successMessage}>
-                            ✅ Thank you! We've received your request and will contact you within 24 hours
+                            ✅ Thank you! We've received your request and will contact you within 24 hours.
                         </div>
                     )}
                     {submitStatus === 'error' && (
                         <div className={styles.errorMessage}>
-                            ❌ Something went wrong while submitting your request. Please try again or contact us directly
+                            ❌ Something went wrong while submitting your request. Please try again or contact us directly.
                         </div>
                     )}
 
