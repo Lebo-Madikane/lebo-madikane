@@ -71,8 +71,9 @@
 
         @include mobile{
             //width: 90%;
+            text-align: center;
             height: 20%;
-            margin-top: 50px;
+            margin-top: 80px;
             position: static;
         }
     }
