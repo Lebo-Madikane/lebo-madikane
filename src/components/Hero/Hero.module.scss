@@ -32,6 +32,7 @@
         position: absolute;
         left: 25%;
         z-index: 19;
+        
 
         .firstP {
             font-size: 0.67rem;
@@ -69,9 +70,10 @@
         }
 
         @include mobile{
-            width: 90%;
+            //width: 90%;
             height: 20%;
             margin-top: 50px;
+            position: static;
         }
     }
 
@@ -89,8 +91,9 @@
         }
 
         @include mobile {
-            width: 90%;
-            height: 60%;
+            position: static;
+            width: 100%;
+            height: fit-content;
         }
     }
 }
