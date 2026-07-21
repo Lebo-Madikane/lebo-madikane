@@ -4,6 +4,7 @@ import styles from './Hero.module.scss';
 import Button from '../UI/Button/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faBurst } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
 
 export default function Hero({ onContactClick }) {
 
@@ -34,7 +35,9 @@ export default function Hero({ onContactClick }) {
                         <Button onClick={handleGetInTouchClick} aria-label="Open form">Let's Work Together <FontAwesomeIcon className={styles.icon} icon={faArrowRight} />
                         </Button>
                     </div>
-                    <div className={styles.image}></div>
+                    <div className={styles.image}>
+                        <Image className={styles.img} src='/images/hero/lebo.svg' alt="Lebo Image" width={150} height={100} priority={true} />
+                    </div>
                 </div>
                 <div className={styles.attributes}>
                     <div className={styles.marqueeTrack}>
