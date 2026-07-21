@@ -2,12 +2,13 @@
 @use "@/styles/mixins" as *;
 
 .card {
-    width: 500px;
-    height: 700px;
+    width: 450px;
+    height: 550px;
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(255, 255, 255, 0.08);
     border-radius: 16px;
     transition: all 0.3s ease;
+    border: 9px solid black;
 
     &.shadow {
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
