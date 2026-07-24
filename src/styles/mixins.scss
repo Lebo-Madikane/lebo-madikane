@@ -43,3 +43,23 @@
         padding: 02rem;
     }
 }
+
+// styles/animations.scss
+
+// 1. Define the keyframe movement
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+// 2. Create a Sass mixin
+@mixin animate-fade-in($duration: 0.4s, $delay: 0s) {
+    animation: fadeInUp $duration ease-out $delay forwards;
+}
