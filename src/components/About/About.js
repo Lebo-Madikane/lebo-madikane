@@ -6,6 +6,7 @@ import Button from '../UI/Button/Button';
 import Image from 'next/image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "motion/react";
 
 const cards = [
     { id: 0, type: 'bio' },
@@ -84,7 +85,12 @@ export default function About({ onHireClick, onResumeClick }) {
     };
 
     return (
-        <section id='about' className={styles.about}>
+        <motion.section id='about' className={styles.about}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: [0, 0, 0.2, 1] }}
+          >
             <div
                 ref={containerRef}
                 className={styles.container}
@@ -162,6 +168,6 @@ export default function About({ onHireClick, onResumeClick }) {
                 </div>
                 <div className={styles.sideFadeRight}></div>
             </div>
-        </section>
+        </motion.section>
     );
 }
