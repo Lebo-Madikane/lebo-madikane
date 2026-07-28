@@ -55,3 +55,11 @@ img {
     height: auto;
     object-fit: cover;
 }
+
+// (Animation)Some users have a system setting that asks websites to reduce motion. This is a professional accessibility requirement.
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}

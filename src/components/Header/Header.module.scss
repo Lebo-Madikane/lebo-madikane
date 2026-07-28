@@ -1,10 +1,22 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-32px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 .header {
     min-height: 76px;
     margin: 0 auto;
-    position: fixed;
+    position: fixed !important;
     top: 0;
     left: 0;
     right: 0;
@@ -13,6 +25,7 @@
     //border-radius: 50px;
     backdrop-filter: blur(8px);
     //background: rgba(0, 0, 0, 0.01);
+    animation: slideInLeft 0.8s ease-out both;
 
     .container {
         width: 98%;
