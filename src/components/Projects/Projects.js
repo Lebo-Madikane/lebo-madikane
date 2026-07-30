@@ -4,12 +4,18 @@ import Button from '../UI/Button/Button';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { motion } from "motion/react";
 
 export default function Projects() {
 
 
     return (
-        <section id='projects' className={styles.projects}>
+        <motion.section id='projects' className={styles.projects}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: [0, 0, 0.2, 1] }}
+        >
             <div className={styles.container}>
                 <div className={styles.columnOne}>
                     <Card className={`${styles.card} ${styles.cardTop} ${styles.cardOne}`}>
@@ -54,6 +60,6 @@ export default function Projects() {
                 <div className={styles.atumBgRightMobile}></div>
                 <div className={styles.atumBgRight}></div>
             </div>
-        </section>
+        </motion.section>
     )
 }

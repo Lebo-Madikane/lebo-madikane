@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import Styles from './page.module.scss'
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import About from "@/components/About/About";
@@ -27,19 +26,16 @@ export default function HomePage() {
   return (
     <main >
       <Header />
-
-      <div className={Styles.homePage}>
-        <Hero onContactClick={() => openModal('contact')} />
-        <About
-          onHireClick={() => openModal('hire')}
-          // ViewResume is a direct link — pass the URL as a prop instead
-          onResumeClick={() => openModal('resume')}
-        />
-        <Projects />
-        <Music />
-        <Contact onContactClick={() => openModal('contact')} />
-        <Footer />
-      </div>
+      <Hero onContactClick={() => openModal('contact')} />
+      <About
+        onHireClick={() => openModal('hire')}
+        // ViewResume is a direct link — pass the URL as a prop instead
+        onResumeClick={() => openModal('resume')}
+      />
+      <Projects />
+      <Music />
+      <Contact onContactClick={() => openModal('contact')} />
+      <Footer />
 
       {/* Single Modal — renders whichever form is active */}
       <Modal isOpen={activeModal !== null} onClose={closeModal}>

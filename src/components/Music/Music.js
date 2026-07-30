@@ -2,12 +2,18 @@ import styles from './Music.module.scss';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpotify, faSoundcloud} from "@fortawesome/free-brands-svg-icons";
+import { faSpotify, faSoundcloud } from "@fortawesome/free-brands-svg-icons";
+import { motion } from "motion/react";
 
 export default function Music() {
 
     return (
-        <section className={styles.musicSection}>
+        <motion.section className={styles.musicSection}
+            initial={{ opacity: 0, y: 40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.3 }}
+            transition={{ duration: 0.7, ease: [0, 0, 0.2, 1] }}
+        >
             <div className={styles.container}>
                 <span className={styles.statementRight}>Curated Deep & Afro-house Music</span>
                 <div className={styles.content}>
@@ -37,6 +43,6 @@ export default function Music() {
                 </div>
                 <span className={styles.statementLeft}>Curated Deep & Afro-house Music</span>
             </div>
-        </section>
+        </motion.section>
     );
 }
