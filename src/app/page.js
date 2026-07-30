@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import styles from './page.module.scss'
 import Header from "@/components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import About from "@/components/About/About";
@@ -12,6 +13,7 @@ import Modal from '@/components/Modal/Modal';
 import LetsWorkTogetherForm from "@/components/Forms/LetsWorkTogetherForm/LetsWorkTogetherForm";
 import HireMeForm from "@/components/Forms/HireMeForm/HireMeForm";
 import ViewResumeForm from '@/components/Forms/ViewResumeForm/ViewResumeForm';
+import { style } from 'motion/react-client';
 
 // activeModal can be: null | 'contact' | 'hire'
 // 'resume' is a direct link — no modal needed
@@ -25,15 +27,17 @@ export default function HomePage() {
 
   return (
     <main >
-      <Header />
-      <Hero onContactClick={() => openModal('contact')} />
-      <About
-        onHireClick={() => openModal('hire')}
-        // ViewResume is a direct link — pass the URL as a prop instead
-        onResumeClick={() => openModal('resume')}
-      />
-      <Projects />
-      <Music />
+      <div className={styles.pageBg}>
+        <Header />
+        <Hero onContactClick={() => openModal('contact')} />
+        <About
+          onHireClick={() => openModal('hire')}
+          // ViewResume is a direct link — pass the URL as a prop instead
+          onResumeClick={() => openModal('resume')}
+        />
+        <Projects />
+        <Music />
+      </div>
       <Contact onContactClick={() => openModal('contact')} />
       <Footer />
 

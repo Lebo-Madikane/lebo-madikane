@@ -16,7 +16,7 @@
 .projects {
     width: 100%;
     height: auto;
-    margin: 6rem auto 0 auto;
+    background-color: var(--white);
 
     @include mobile {
         margin: 3rem auto 0 auto;
@@ -26,7 +26,7 @@
 .container {
     width: fit-content;
     position: relative;
-    margin: 0 auto;
+    margin: 6rem auto 0 auto;
     padding: 10px;
     display: flex;
     justify-content: center;

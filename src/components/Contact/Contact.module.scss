@@ -4,6 +4,10 @@
 .contact {
     width: 100%;
     background: var(--obsidian);
+    margin-bottom: 18%;
+    position: fixed;
+    bottom: 0;
+    z-index: -10 !important;
     //background-color: radial-gradient(ellipse at 50% 100%, rgba(232, 197, 71, 0.22) 0%, transparent 60%);
 }
 

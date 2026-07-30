@@ -18,6 +18,9 @@
     //min-height: 600px;
     padding: 5px;
     position: relative;
+    background-color: var(--white);
+    //margin-bottom: 35%;
+    z-index: 20 !important;
 }
 
 .container {
