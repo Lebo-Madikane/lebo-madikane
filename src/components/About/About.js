@@ -106,7 +106,7 @@ export default function About({ onHireClick, onResumeClick }) {
                     </div>
                     <div className={styles.aboutBottom}>
                         <p className={styles.aboutMeText}>
-                            My name is Lebo, I am passionate to empower individuals and businesses to develop professionally.<br /><span className={styles.breakText}>
+                            My name is Lebo, I empower individuals and businesses to develop professionally.<br /><span className={styles.breakText}>
                                 Through creative designs, I am a Software Engineer and Content Creator.</span>
                         </p>
                     </div>
