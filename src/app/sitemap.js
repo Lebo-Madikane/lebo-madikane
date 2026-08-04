@@ -1,9 +1,8 @@
-import { MetadataRoute } from "next";
 
 export default function sitemap() {
     return [
         {
-            url: "https://lebo-madikane-seven.vercel.app/",
+            url: "https://lebo-madikane-seven.vercel.app",
             lastModified: new Date(),
             changeFrequency: "weekly",
             priority: 1,
