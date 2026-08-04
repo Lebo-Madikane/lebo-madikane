@@ -15,7 +15,11 @@ const inter = Inter({
 
 export const metadata = {
   title: "Lebo Madikane - A Web Developer and Content Creator",
-  description: "I build digital experiences and empower brands through design.",
+  description: "I build digital experiences and empower brands through web development.",
+
+  verification: {
+    google: "JRLgTu3QN-KQoxD6LbFryIdZtXmxLcnNSDis4LFhUxM",
+  },
 };
 
 export default function RootLayout({ children }) {

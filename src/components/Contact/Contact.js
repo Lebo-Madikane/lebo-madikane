@@ -12,7 +12,7 @@ export default function Contact({ onContactClick }) {
     };
 
     return (
-        <section id='contact' className={styles.contact}>
+        <section id="contact" className={styles.contact}>
             <div className={styles.container}>
                 <h2>Let's build someting together.</h2>
                 <Button onClick={handleGetInTouchClick} aria-label="Open form">Let's Work Together <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
