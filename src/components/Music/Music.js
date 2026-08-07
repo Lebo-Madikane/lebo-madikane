@@ -8,7 +8,7 @@ import { motion } from "motion/react";
 export default function Music() {
 
     return (
-        <motion.section className={styles.musicSection}
+        <motion.section id='music' className={styles.musicSection}
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, amount: 0.3 }}
