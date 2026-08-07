@@ -1,5 +1,7 @@
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "../styles/global.scss";
+import { personSchema } from "@/lib/schema";
+import { websiteSchema } from "@/lib/schema";
 
 // Configure Bricolage Grotesque (primary font)
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -25,7 +27,27 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${bricolageGrotesque.variable} ${inter.variable}`}>
-      <body>{children}</body>
+
+      <body>
+        
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(personSchema),
+          }}
+        />
+
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(websiteSchema),
+          }}
+        />
+        
+        {children}
+      
+      </body>
+
     </html>
   );
 }
