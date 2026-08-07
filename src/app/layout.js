@@ -1,7 +1,7 @@
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "../styles/global.scss";
-import { personSchema } from "@/lib/schema";
-import { websiteSchema } from "@/lib/schema";
+import { personSchema } from "../lib/schema";
+import { websiteSchema } from "../lib/schema";
 
 // Configure Bricolage Grotesque (primary font)
 const bricolageGrotesque = Bricolage_Grotesque({
