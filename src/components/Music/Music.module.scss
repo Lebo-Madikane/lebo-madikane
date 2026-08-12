@@ -135,6 +135,10 @@
 
     .textTwo {
         color: var(--white);
+
+        @include mobile {
+            font-size: 0.7rem;
+        }
     }
 }
 
