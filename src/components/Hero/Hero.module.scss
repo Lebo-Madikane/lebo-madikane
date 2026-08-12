@@ -34,6 +34,7 @@
     border: 2px solid green;
 
     @include mobile {
+        position: relative;
         width: 100%;
         height: fit-content;
     }
@@ -117,7 +118,7 @@
         }
 
         @include mobile {
-            //position: relative;
+            position: relative;
             width: 100%;
             right: inherit;
             //height: fit-content;
