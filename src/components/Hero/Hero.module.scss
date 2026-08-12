@@ -7,6 +7,7 @@
     margin-top: 85px;
     position: relative;
     background-color: var(--white);
+    border: 2px solid red;
 
     @include mobile {
         overflow-x: hidden;
@@ -30,6 +31,7 @@
     align-items: flex-end;
     flex-wrap: wrap;
     line-height: 1.3;
+    border: 2px solid green;
 
     @include mobile {
         width: 100%;
@@ -115,9 +117,10 @@
         }
 
         @include mobile {
-            position: static;
+            position: relative;
             width: 100%;
-            height: fit-content;
+            right: inherit;
+            //height: fit-content;
         }
 
         @keyframes fadeIn {
@@ -133,8 +136,9 @@
 }
 
 .attributes {
-    //height: 6%;
+    height: 6%;
     overflow-x: hidden;
+    border: 2px solid yellow;
 
     .marqueeTrack{
         display: flex;
