@@ -7,7 +7,6 @@
     margin-top: 85px;
     position: relative;
     background-color: var(--white);
-    border: 2px solid red;
 
     @include mobile {
         overflow-x: hidden;
@@ -119,7 +118,7 @@
         }
 
         @include mobile {
-            //position: relative;
+            position: relative;
             width: 100%;
             right: inherit;
             //height: fit-content;
