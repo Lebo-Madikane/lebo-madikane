@@ -35,6 +35,7 @@
 
     @include mobile {
         gap: 1rem;
+        margin: 4rem auto 0 auto;
 
         .columnOne, .columnTwo {
             width: 50%;
