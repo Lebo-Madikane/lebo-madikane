@@ -87,8 +87,11 @@
 
         @include mobile{
             text-align: center;
-            position: static;
+            position: relative;
+            left: 0;
+            bottom: 350;
             margin-bottom: 2rem;
+            border: 2px solid #000000;
         }
 
         @keyframes fadeInText {
