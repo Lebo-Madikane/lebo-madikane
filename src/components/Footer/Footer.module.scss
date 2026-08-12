@@ -66,6 +66,10 @@
     &:hover {
         font-size: 1.3em;
     }
+
+    @include mobile {
+        margin: 5px 15px;
+    }
 }
 
 .footerBottom {
