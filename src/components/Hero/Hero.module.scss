@@ -119,7 +119,7 @@
 
         @include mobile {
             position: relative;
-            width: 100%;
+            width: auto;
             right: inherit;
             border: 2px solid orange;
         }
