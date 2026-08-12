@@ -44,7 +44,7 @@ export default function Projects() {
                         <div className={styles.cardText}>
                             <p>Cosmetics</p>
                             <h4>Hair Salon</h4>
-                            <Link href={'https://ness-beauty-salon-xvzl0xbaa-lebos-projects-51dc900f.vercel.app/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
+                            <Link href={'https://ness-beauty-salon-rho.vercel.app/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
                         </div>
                     </Card>
                 </div>
