@@ -17,6 +17,7 @@
     padding: 10px;
     background-color: var(--white);
     animation: fadeIn 0.8s ease-out both;
+    overflow-y: auto;
     border: 2px solid red;
 }
 
