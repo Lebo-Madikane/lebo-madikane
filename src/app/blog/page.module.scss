@@ -13,13 +13,14 @@
 
 .blogPage {
     width: 100%;
-    height: fit-content;
-    //margin-top: 85px;
-    animation: fadeIn 0.8s ease-out both;;
+    margin-top: 85px;
+    background-color: var(--white);
+    animation: fadeIn 0.8s ease-out both;
+    border: 2px solid red;
 }
 
 .blogContainer {
-    height: 400px;
     align-content: center;
     text-align: center;
+    border: 2px solid yellow;
 }

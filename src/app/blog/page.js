@@ -11,6 +11,13 @@ export default function Blog() {
             <div className={styles.blogContainer}>
                 <h1>BLOG PAGE</h1>
                 <p>Articles publishing soon!</p>
+                <p>Articles publishing soon!</p>
+                <p>Articles publishing soon!</p>
+                <p>Articles publishing soon!</p>
+                <p>Articles publishing soon!</p>
+                <p>Articles publishing soon!</p>
+                <p>Articles publishing soon!</p>
+                <p>Articles publishing soon!</p>
             </div>
             <Contact />
             <Footer />
