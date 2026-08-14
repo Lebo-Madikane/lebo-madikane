@@ -6,22 +6,16 @@ import Footer from '@/components/Footer/Footer'
 export default function Blog() {
 
     return (
-        <div className={styles.blogPage}>
+        <>
             <Header />
-            <div className={styles.blogContainer}>
-                <h1>BLOG PAGE</h1>
-                <p>Articles publishing soon!</p>
-                <p>Articles publishing soon!</p>
-                <p>Articles publishing soon!</p>
-                <p>Articles publishing soon!</p>
-                <p>Articles publishing soon!</p>
-                <p>Articles publishing soon!</p>
-                <p>Articles publishing soon!</p>
-                <p>Articles publishing soon!</p>
+            <div className={styles.blogPage}>
+                <div className={styles.blogContainer}>
+                    <h1>BLOG PAGE</h1>
+                    <p>Articles publishing soon!</p>
+                </div>
             </div>
             <Contact />
             <Footer />
-        </div>
+        </>
     )
-
-}
+};
