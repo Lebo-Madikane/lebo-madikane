@@ -87,7 +87,7 @@ export default function ViewResumeForm() {
             <div className={styles.container}>
                 <Card className={styles.formCard}>
                     <div className={styles.contactFormHeader}>
-                        <h3>Receive resume via email</h3>
+                        <h3>Receive via email</h3>
                     </div>
 
                     {/* Status Messages */}
