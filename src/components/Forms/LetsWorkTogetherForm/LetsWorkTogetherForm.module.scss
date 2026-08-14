@@ -126,11 +126,19 @@
 @include mobile {
 
     .formSection {
+
         .container {
+
+            min-height: 600px;
+
             .formCard {
-                width: 95%;
-                height: fit-content;
+                width: 100%;
+                height: 100% !important;
             }
+        }
+
+        .formBudget {
+            display: none;
         }
     }
 

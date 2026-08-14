@@ -1,8 +1,7 @@
 'use client';
-
+import styles from './Modal.module.scss';
 import { useEffect } from 'react';
 import Button from '../UI/Button/Button';
-import styles from './Modal.module.scss';
 
 export default function Modal({ isOpen, onClose, children }) {
     useEffect(() => {

@@ -8,14 +8,16 @@ export default function Button({
     href,
     type = 'button',
     onClick,
-
+    className = '',
 }) {
 
-    const classNames = ` ${styles.button} ${styles[variant]} ${styles[size]}`;
+    const classNames = ` ${styles.button} ${styles[variant]} ${styles[size]} ${className}`;
 
     if (href) {
         return (
-            <Link href={href} className={classNames}>{children}</Link>
+            <Link href={href} className={classNames}>
+                {children}
+            </Link>
         )
     };
 
