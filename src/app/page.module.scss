@@ -1,5 +1,11 @@
+@use '../styles/variables' as *;
+@use '../styles/mixins' as *;
 
 .pageBg {
     margin-bottom: 420px;
     background-color: #ffffff;
+
+    @include mobile {
+        margin-bottom: 370px;
+    }
 }
