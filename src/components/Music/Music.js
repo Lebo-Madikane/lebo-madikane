@@ -21,7 +21,7 @@ export default function Music() {
                     <div className={styles.contentContainer}>
                         <div className={styles.header}>
                             <h2 className={styles.headerH2}>Let's Play House</h2>
-                            <span className={styles.forMobile}>Curated Deep & Afro-house Music. <Button variant='tertiary' size='xs' href='/music'>View Profile</Button></span>
+                            <span className={styles.forMobile}>Curated Deep & Afro-house Music. <Button className={styles.viewProfileBtn} variant='tertiary' size='xs' href='/music'>View Profile</Button></span>
                         </div>
                         <div className={styles.images}>
                             <Image className={styles.img} src='/images/music/musicImage1.svg' alt="Music Image" width={150} height={100} priority={true} />
