@@ -17,7 +17,7 @@ export default function Footer() {
                 </div>
                 <div>
                     <div className={styles.footerNav}>
-                        <Link href="#hero" className={styles.links}>Home</Link>
+                        <Link href="/" className={styles.links}>Home</Link>
                         <Link href="#projects" className={styles.links}>Projects</Link>
                         {/* <Link href="mailto:madikanelebohang@gmail.com" className={styles.links}>Email</Link> */}
                         <Link href="/blog" target="_blank" rel="noopener noreferrer" className={styles.links}>Blog</Link>
