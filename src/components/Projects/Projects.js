@@ -35,16 +35,16 @@ export default function Projects() {
                 <div className={styles.columnTwo}>
                     <Card className={`${styles.card} ${styles.cardTop} ${styles.cardThree}`}>
                         <div className={styles.cardText}>
-                            <p>Hospitality</p>
-                            <h4>B&B</h4>
-                            <Link href={'https://www.lindanibnb.co.za/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
+                            <p>Cosmetics</p>
+                            <h4>Hair Salon</h4>
+                            <Link href={'https://ness-beauty-salon-rho.vercel.app/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
                         </div>
                     </Card>
                     <Card className={`${styles.card} ${styles.cardFour}`}>
                         <div className={styles.cardText}>
-                            <p>Cosmetics</p>
-                            <h4>Hair Salon</h4>
-                            <Link href={'https://ness-beauty-salon-rho.vercel.app/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
+                            <p>Hospitality</p>
+                            <h4>B&B</h4>
+                            <Link href={'https://www.lindanibnb.co.za/'} target='_blank'><Button variant='tertiary' size='xs' className={styles.btn}>View <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button></Link>
                         </div>
                     </Card>
                 </div>
