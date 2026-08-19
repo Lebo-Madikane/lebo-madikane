@@ -139,6 +139,10 @@
             &.active {
                 opacity: 1;
             }
+
+            .aboutMeText {
+                font-size: 0.9rem;
+            }
         }
 
         // ─── CONTROLS ─────────────────────────────────────────
@@ -264,6 +268,7 @@
                     @include mobile {
                         gap: 3;
                         width: 120px;
+                        font-size: 0.9rem;
                     }
                 }
             }
