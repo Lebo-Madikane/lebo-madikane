@@ -13,5 +13,11 @@ export default function sitemap() {
             changeFrequency: "monthly",
             priority: 0.8,
         },
+        {
+            url: "https://lebo-madikane-seven.vercel.app/music",
+            lastModified: new Date(),
+            changeFrequency: "monthly",
+            priority: 0.9,
+        },
     ];
 }
