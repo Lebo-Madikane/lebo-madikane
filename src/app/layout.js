@@ -1,11 +1,11 @@
-import { Bricolage_Grotesque, Inter } from "next/font/google";
 import "../styles/global.scss";
+import { Bricolage_Grotesque, Inter } from "next/font/google";
 import { personSchema } from "../lib/schema";
 import { websiteSchema } from "../lib/schema";
 
 // Configure Bricolage Grotesque (primary font)
 const bricolageGrotesque = Bricolage_Grotesque({
-  variable: "--font-gricolage-grotesque",
+  variable: "--font-bricolage-grotesque",
   subsets: ["latin"],
 });
 
@@ -15,9 +15,16 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
+// Metadata for search results(Technical SEO)
 export const metadata = {
-  title: "Lebo Madikane - A Web Developer and Content Creator",
-  description: "I build digital experiences and empower brands through web development.",
+  metadataBase: new URL("https://lebo-madikane-seven.vercel.app"),
+
+  title: {
+    default: "Software Developer & Digital Marketer",
+    template: "%s | Lebo Madikane",
+  },
+
+  description: "Explore the portfolio of Lebo Madikane, a software developer, content creator, SEO specialist and digital marketer.",
 
   verification: {
     google: "JRLgTu3QN-KQoxD6LbFryIdZtXmxLcnNSDis4LFhUxM",
