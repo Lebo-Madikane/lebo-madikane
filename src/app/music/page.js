@@ -6,6 +6,10 @@ import MusicClient from "./musicClient";
 export const metadata = {
     title: "Music Curation",
     description: "Follow the musical journey of Lebo Madikane as a professional house music dj and musical curator",
+
+    alternates: {
+        canonical: "/music",
+    },
 };
 
 export default function MusicPage() {
