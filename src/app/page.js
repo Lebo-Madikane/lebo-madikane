@@ -15,8 +15,6 @@ import HireMeForm from "@/components/Forms/HireMeForm/HireMeForm";
 import ViewResumeForm from '@/components/Forms/ViewResumeForm/ViewResumeForm';
 import { style } from 'motion/react-client';
 
-// activeModal can be: null | 'contact' | 'hire'
-// 'resume' is a direct link — no modal needed
 
 export default function HomePage() {
 

@@ -10,9 +10,9 @@ export const personSchema = {
 
     image: "https://lebo-madikane-seven.vercel.app/images/profile.jpg",
 
-    jobTitle: "Software Developer and Content Creator",
+    jobTitle: "Software Developer, Content Creator, and Digital Marketer",
 
-    description: "Junior Web Developer specializing in Next.js, React, JavaScript and Digital Marketing.",
+    description: "Software Developer specializing in Next.js, React, JavaScript and Digital Marketing to build mordern software applications.",
 
     email: "your-email@example.com",
 
@@ -45,7 +45,7 @@ export const websiteSchema = {
 
     url: "https://lebo-madikane-seven.vercel.app",
 
-    description: "Portfolio of Junior Web Developer and Content Creator Lebo Madikane.",
+    description: "Portfolio of a Software Developer, Content Creator, and Digital Marketer | Lebo Madikane.",
 
     publisher: {
         "@type": "Organization",
