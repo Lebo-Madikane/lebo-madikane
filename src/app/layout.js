@@ -3,6 +3,7 @@ import { Bricolage_Grotesque, Inter } from "next/font/google";
 import { personSchema } from "../lib/schema";
 import { websiteSchema } from "../lib/schema";
 import { title } from "motion/react-client";
+import { GoogleAnalytics } from "@next/third-parties/google";
 
 // Configure Bricolage Grotesque (primary font)
 const bricolageGrotesque = Bricolage_Grotesque({
@@ -78,6 +79,8 @@ export default function RootLayout({ children }) {
         {children}
       
       </body>
+
+      <GoogleAnalytics gaId="G-5VY3NYFE19"/>
 
     </html>
   );
