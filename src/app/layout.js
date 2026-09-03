@@ -2,19 +2,20 @@ import "../styles/global.scss";
 import { Bricolage_Grotesque, Inter } from "next/font/google";
 import { personSchema } from "../lib/schema";
 import { websiteSchema } from "../lib/schema";
-import { title } from "motion/react-client";
 import { GoogleAnalytics } from "@next/third-parties/google";
 
 // Configure Bricolage Grotesque (primary font)
 const bricolageGrotesque = Bricolage_Grotesque({
   variable: "--font-bricolage-grotesque",
   subsets: ["latin"],
+  display: 'swap'
 });
 
 // Configure Inter (secondary font)
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  display: 'swap'
 });
 
 // Metadata for search results(Technical SEO)
@@ -62,6 +63,8 @@ export default function RootLayout({ children }) {
 
       <body>
         
+        {children}
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -75,12 +78,10 @@ export default function RootLayout({ children }) {
             __html: JSON.stringify(websiteSchema),
           }}
         />
-        
-        {children}
+
+        <GoogleAnalytics gaId="G-5VY3NYFE19" />
       
       </body>
-
-      <GoogleAnalytics gaId="G-5VY3NYFE19"/>
 
     </html>
   );
