@@ -53,7 +53,7 @@
 
     .container {
         width: 70%;
-        height: 400px;
+        height: fit-content;
         margin: 0px auto;
         @include flex-center;
         gap: 2rem;
