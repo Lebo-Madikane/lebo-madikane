@@ -28,7 +28,12 @@ export default function MusicClient() {
                     </div>
                     <div className={styles.bioSection}>
                         <div className={styles.container}>
+                            <div className={styles.artistBioHeading}>
 
+                            </div>
+                            <div className={styles.artistBio}>
+
+                            </div>
                         </div>
                     </div>
                     <div className={styles.soundHireSection}>
