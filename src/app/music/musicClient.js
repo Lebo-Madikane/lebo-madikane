@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './musicClient.module.scss'
+import Image from 'next/image';
 import Header from '@/components/Header/Header'
 import Contact from '@/components/Contact/Contact'
 import Footer from '@/components/Footer/Footer'
@@ -20,8 +21,26 @@ export default function MusicClient() {
             <Header />
             <div className={styles.musicPage}>
                 <div className={styles.musicContainer}>
-                    <h1>MUSIC PAGE</h1>
-                    <p>Dj / Music Bio..</p>
+                    <div className={styles.heroSection}>
+                        <div className={styles.imageContainer}>
+                            <Image className={styles.img} src='/images/music/musicPageHero.svg' alt="Lebo Image" width={150} height={100} priority={true} />
+                        </div>
+                    </div>
+                    <div className={styles.bioSection}>
+                        <div className={styles.container}>
+
+                        </div>
+                    </div>
+                    <div className={styles.soundHireSection}>
+                        <div className={styles.container}>
+
+                        </div>
+                    </div>
+                    <div className={styles.collaborationSection}>
+                        <div className={styles.container}>
+                            
+                        </div>
+                    </div>
                 </div>
             </div>
             <Contact onContactClick={() => openModal('contact')} />

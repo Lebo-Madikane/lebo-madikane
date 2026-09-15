@@ -29,3 +29,15 @@
     align-content: center;
     text-align: center;
 }
+
+.imageContainer {
+    width: 70%;
+    height: 400px;
+    margin: 0px auto;
+
+    .img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
