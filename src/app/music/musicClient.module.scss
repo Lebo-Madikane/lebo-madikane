@@ -50,6 +50,7 @@
 
 .bioSection {
     border: 2px solid green;
+    text-align: start;
 
     .container {
         width: 70%;
@@ -61,14 +62,30 @@
 
         .artistBioHeading {
             flex: 0.5;
-            height: 100%;
-            border: 2px solid green;
+            align-self: flex-start;
+
+            h2 {
+                line-height: 1.1;
+            }
         }
 
         .artistBio {
             flex: 1;
-            height: 100%;
-            border: 2px solid green;
+            
+            h4 {
+                color: #000000;
+                margin-bottom: 0.8rem;
+            }
+
+            p {
+                margin-bottom: 0.8rem;
+            }
+        }
+
+        .btnsContainer {
+            .callToBookBtn {
+                margin-right: 0.8rem;
+            }
         }
     }
 }
