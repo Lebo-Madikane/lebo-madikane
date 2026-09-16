@@ -29,7 +29,7 @@ export default function MusicClient() {
                         </div>
                     </div>
                     <div className={styles.bioSection}>
-                        <div className={styles.container}>
+                        <div className={styles.bioContainer}>
                             <div className={styles.artistBioHeading}>
                                 <p>Artist Bio</p>
                                 <h2>South African<br/>
@@ -47,8 +47,20 @@ export default function MusicClient() {
                         </div>
                     </div>
                     <div className={styles.soundHireSection}>
-                        <div className={styles.container}>
+                        <div className={styles.soundHireContainer}>
+                            <div className={styles.soundHireContent}>
+                                <p>For Hire</p>
+                                <h2>Sound EQ</h2>
+                                <p>I offer DJ and sound-hire solutions for intimate events, private functions, parties, listening sessions and small-to-medium venues.</p>
+                                <p>Sound requirements vary by event, so get in touch with your event details for a tailored quote.</p>
+                                <div className={styles.btnsContainer}>
+                                    <Button className={styles.quoteBtn}>Get A Quote</Button>
+                                    <Button variant='secondary'>WhatsApp</Button>
+                                </div>
+                            </div>
+                            <div className={styles.soundHireImageContainer}>
 
+                            </div>
                         </div>
                     </div>
                     <div className={styles.collaborationSection}>

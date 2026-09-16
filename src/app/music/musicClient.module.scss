@@ -33,18 +33,18 @@
 
 .heroSection {
     border: 2px solid red;
-}
 
-.imageContainer {
-    width: 70%;
-    height: 400px;
-    margin: 0px auto;
-    border: 2px solid red;
-
-    .img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
+    .imageContainer {
+        width: 70%;
+        height: 400px;
+        margin: 0px auto;
+        border: 2px solid red;
+    
+        .img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+        }
     }
 }
 
@@ -52,7 +52,7 @@
     border: 2px solid green;
     text-align: start;
 
-    .container {
+    .bioContainer {
         width: 70%;
         height: fit-content;
         margin: 0px auto;
@@ -73,7 +73,7 @@
             flex: 1;
             
             h4 {
-                color: #000000;
+                color: var(--obsidian);
                 margin-bottom: 0.8rem;
             }
 
@@ -88,4 +88,33 @@
             }
         }
     }
+}
+
+.soundHireSection {
+    width: 100%;
+    height: 400px;
+    background-color: var(--ivory);
+    text-align: start;
+    border: 2px solid orange;
+
+    .soundHireContainer {
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        @include flex-center;
+        gap: 2rem;
+        border: 2px solid orange;
+
+        .soundHireContent {
+            flex: 1;
+            border: 2px solid orange;
+        }
+
+        .soundHireImageContainer {
+            flex: 1;
+            height: 100%;
+            border: 2px solid orange;
+        }
+    }
+
 }
