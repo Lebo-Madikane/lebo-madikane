@@ -4,10 +4,13 @@ import { useState } from 'react';
 import styles from './musicClient.module.scss'
 import Image from 'next/image';
 import Button from '@/components/UI/Button/Button';
-import Header from '@/components/Header/Header'
-import Contact from '@/components/Contact/Contact'
-import Footer from '@/components/Footer/Footer'
-import Modal from '@/components/Modal/Modal'
+import Header from '@/components/Header/Header';
+import Link from 'next/link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpotify, faSoundcloud } from "@fortawesome/free-brands-svg-icons";
+import Contact from '@/components/Contact/Contact';
+import Footer from '@/components/Footer/Footer';
+import Modal from '@/components/Modal/Modal';
 import LetsWorkTogetherForm from "@/components/Forms/LetsWorkTogetherForm/LetsWorkTogetherForm";
 
 export default function MusicClient() {
@@ -64,8 +67,27 @@ export default function MusicClient() {
                         </div>
                     </div>
                     <div className={styles.collaborationSection}>
-                        <div className={styles.container}>
-                            
+                        <div className={styles.collaborationContainer}>
+                            <p>collaboration</p>
+                            <h2>SAMZAR</h2>
+                            <p className={styles.secondP}>I'm always open to connecting with artists, DJs, producers, creatives, venues and brands who share a genuine love for music and culture.</p>
+                            <div className={styles.cta}>
+                                <div className={styles.ctaText}>
+                                    <p className={styles.nowStreaming}>NOW STREAMING</p>
+                                    <p className={styles.textTwo}><span className={styles.textTwoMobile}>Deep & Afro-house</span> DJ Sets | Playlists</p>
+                                </div>
+                                <div className={styles.ctaPlatforms}>
+                                    <Link href="https://soundcloud.com/lebomadikane" target="_blank" rel="noopener noreferrer" className={`${styles.plartformsBorder} ${styles.soundcloudBg}`}>
+                                        <FontAwesomeIcon className={`${styles.icon} ${styles.soundcloud}`} icon={faSoundcloud} />
+                                    </Link>
+                                    <Link href="https://open.spotify.com/user/rrw1oyqu9zsi2140dv941qxps" target="_blank" rel="noopener noreferrer" className={`${styles.plartformsBorder} ${styles.spotifyBg}`}>
+                                        <FontAwesomeIcon className={`${styles.icon} ${styles.spotify}`} icon={faSpotify} />
+                                    </Link>
+                                </div>
+                            </div>
+                            <div className={styles.imagePlacement}>
+                                <Image className={styles.img} src='/images/music/samzarImage.svg' alt="Lebo Image" width={150} height={100} priority={true} />
+                            </div>
                         </div>
                     </div>
                 </div>
