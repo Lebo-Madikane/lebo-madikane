@@ -50,9 +50,9 @@ export default function MusicClient() {
                         <div className={styles.soundHireContainer}>
                             <div className={styles.soundHireContent}>
                                 <p>For Hire</p>
-                                <h2>Sound EQ</h2>
-                                <p>I offer DJ and sound-hire solutions for intimate events, private functions, parties, listening sessions and small-to-medium venues.</p>
-                                <p>Sound requirements vary by event, so get in touch with your event details for a tailored quote.</p>
+                                <h2>Sound Express</h2>
+                                <p className={styles.paragraph}>I offer DJ and sound-hire solutions for intimate events, private functions, parties, listening sessions and small-to-medium venues.</p>
+                                <p className={styles.paragraph}>Sound requirements vary by event, so get in touch with your event details for a tailored quote.</p>
                                 <div className={styles.btnsContainer}>
                                     <Button className={styles.quoteBtn}>Get A Quote</Button>
                                     <Button variant='secondary'>WhatsApp</Button>
