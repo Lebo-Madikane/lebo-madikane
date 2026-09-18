@@ -25,7 +25,6 @@ export default function MusicClient() {
             <Header />
             <div className={styles.musicPage}>
                 <div className={styles.musicContainer}>
-                    <h2>If you're visiting this page, you're part of the development process. Visit again next time for more content.</h2>
                     <div className={styles.heroSection}>
                         <div className={styles.imageContainer}>
                             <Image className={styles.img} src='/images/music/musicPageHero.svg' alt="Lebo Image" width={150} height={100} priority={true} />

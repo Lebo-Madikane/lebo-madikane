@@ -25,20 +25,18 @@
 }
 
 .musicContainer {
-    padding: 10px;
+    //padding: 10px;
     align-content: center;
     text-align: center;
-    border: 2px solid yellow;
 }
 
 .heroSection {
-    border: 2px solid red;
+    margin: 4rem auto;
 
     .imageContainer {
         width: 70%;
         height: 400px;
         margin: 0px auto;
-        border: 2px solid red;
     
         .img {
             width: 100%;
@@ -49,7 +47,7 @@
 }
 
 .bioSection {
-    border: 2px solid green;
+    margin: 4rem auto;
     text-align: start;
 
     .bioContainer {
@@ -58,7 +56,6 @@
         margin: 0px auto;
         @include flex-center;
         gap: 2rem;
-        border: 2px solid green;
 
         .artistBioHeading {
             flex: 0.5;
@@ -93,9 +90,9 @@
 .soundHireSection {
     width: 100%;
     height: 400px;
+    margin: 5rem auto;
     background-color: var(--ivory);
     text-align: start;
-    border: 2px solid orange;
 
     .soundHireContainer {
         width: 80%;
@@ -103,7 +100,6 @@
         margin: 0 auto;
         @include flex-center;
         gap: 2rem;
-        border: 2px solid orange;
 
         .soundHireContent {
             flex: 1;
@@ -135,12 +131,11 @@
 
 .collaborationSection {
     width: 100%;
-    border: 2px solid blue;
+    margin: 4rem auto;
 
     .collaborationContainer {
         width: fit-content;
         margin: 0 auto;
-        border: 2px solid blue;
 
         h2 {
             line-height: 1.1;
