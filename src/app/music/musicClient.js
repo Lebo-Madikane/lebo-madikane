@@ -61,7 +61,7 @@ export default function MusicClient() {
                                 </div>
                             </div>
                             <div className={styles.soundHireImageContainer}>
-
+                                <Image className={styles.djBoothImg} src='/images/music/djBooth.svg' alt="Lebo Image" width={150} height={100} priority={true} />
                             </div>
                         </div>
                     </div>
@@ -70,6 +70,9 @@ export default function MusicClient() {
                             <p>collaboration</p>
                             <h2>SAMZAR</h2>
                             <p className={styles.secondP}>I'm always open to connecting with artists, DJs, producers, creatives, venues and brands who share a genuine love for music and culture.</p>
+                            <div className={styles.imagePlacement}>
+                                <Image className={styles.img} src='/images/music/samzarImage.svg' alt="Lebo Image" width={150} height={100} priority={true} />
+                            </div>
                             <div className={styles.cta}>
                                 <div className={styles.ctaText}>
                                     <p className={styles.nowStreaming}>NOW STREAMING</p>
@@ -83,9 +86,6 @@ export default function MusicClient() {
                                         <FontAwesomeIcon className={`${styles.icon} ${styles.spotify}`} icon={faSpotify} />
                                     </Link>
                                 </div>
-                            </div>
-                            <div className={styles.imagePlacement}>
-                                <Image className={styles.img} src='/images/music/samzarImage.svg' alt="Lebo Image" width={150} height={100} priority={true} />
                             </div>
                         </div>
                     </div>
