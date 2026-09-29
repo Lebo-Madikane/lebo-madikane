@@ -55,6 +55,7 @@
         height: fit-content;
         margin: 0px auto;
         @include flex-center;
+        flex-wrap: wrap;
         gap: 2rem;
 
         .artistBioHeading {
@@ -89,7 +90,8 @@
 
 .soundHireSection {
     width: 100%;
-    height: 450px;
+    height: fit-content;
+    padding: 4rem 0px;
     margin: 5rem auto;
     background-color: var(--ivory);
     text-align: start;
@@ -154,7 +156,7 @@
 
         .imagePlacement {
             width: 100%;
-            min-height: 200px;
+            height: fit-content;
         
             .img {
                 width: 100%;
@@ -174,10 +176,6 @@
             position: relative;
             align-content: center;
             background-color: var(--obsidian);
-        
-            @include mobile {
-                width: 90%;
-            }
         }
         
         .ctaText {
@@ -252,4 +250,56 @@
         
         }
     }
+}
+
+
+
+// Mobile Responsive Design
+
+@include mobile {
+
+    .heroSection {
+        margin: 1rem auto;
+
+        .imageContainer {
+            width: 100%;
+            height: fit-content;
+        }
+    }
+
+    .bioSection {
+
+        .bioContainer {
+            width: 100%;
+            flex-direction: column;
+        }
+    }
+
+    .soundHireSection {
+        padding: 10px 0px;
+
+        .soundHireContainer {
+            width: 100%;
+            padding: 5px;
+            flex-direction: column;
+        }
+    }
+
+    .collaborationSection {
+
+        .collaborationContainer {
+
+            .secondP {
+                width: 100%;
+            }
+
+            .cta {
+                width: 98%;
+                text-align: left;
+                margin: 2rem auto 0px auto;
+            }
+        }
+
+    }
+
 }
