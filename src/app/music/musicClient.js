@@ -7,7 +7,8 @@ import Button from '@/components/UI/Button/Button';
 import Header from '@/components/Header/Header';
 import Link from 'next/link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSpotify, faSoundcloud } from "@fortawesome/free-brands-svg-icons";
+import { faSpotify, faSoundcloud, faWhatsapp } from "@fortawesome/free-brands-svg-icons";
+import { faPhone } from "@fortawesome/free-solid-svg-icons";
 import Contact from '@/components/Contact/Contact';
 import Footer from '@/components/Footer/Footer';
 import Modal from '@/components/Modal/Modal';
@@ -42,8 +43,8 @@ export default function MusicClient() {
                                 <p>My relationship with house music began in 2008 through a deep love for discovering, collecting and sharing music. What started as a personal obsession grew into DJing, online mixes, curated playlists and collaborations with fellow selectors, including a DJ trio that brought our sound to local venues and intimate spaces.</p>
                                 <p>My sets don't follow a rigid script. Depending on the room and the moment, I navigate from melodic, introspective grooves through to Afrocentric rhythms — always reading the crowd, always serving the music first.</p>
                                 <div className={styles.btnsContainer}>
-                                    <Button className={styles.callToBookBtn}>Call to Book</Button>
-                                    <Button variant='secondary'>WhatsApp</Button>
+                                    <Button className={styles.callToBookBtn}><FontAwesomeIcon className={`${styles.icon} ${styles.soundcloud}`} icon={faPhone} />Call to Book</Button>
+                                    <Button variant='secondary'><FontAwesomeIcon className={`${styles.icon} ${styles.soundcloud}`} icon={faWhatsapp} />WhatsApp</Button>
                                 </div>
                             </div>
                         </div>
@@ -56,8 +57,8 @@ export default function MusicClient() {
                                 <p className={styles.paragraph}>I offer DJ and sound-hire solutions for intimate events, private functions, parties, listening sessions and small-to-medium venues.</p>
                                 <p className={styles.paragraph}>Sound requirements vary by event, so get in touch with your event details for a tailored quote.</p>
                                 <div className={styles.btnsContainer}>
-                                    <Button className={styles.quoteBtn}>Get A Quote</Button>
-                                    <Button variant='secondary'>WhatsApp</Button>
+                                    <Button className={styles.quoteBtn}><FontAwesomeIcon className={`${styles.icon} ${styles.soundcloud}`} icon={faPhone} />Get A Quote</Button>
+                                    <Button variant='secondary'><FontAwesomeIcon className={`${styles.icon} ${styles.soundcloud}`} icon={faWhatsapp} />WhatsApp</Button>
                                 </div>
                             </div>
                             <div className={styles.soundHireImageContainer}>
