@@ -257,9 +257,12 @@
 // Mobile Responsive Design
 
 @include mobile {
+    .musicPage {
+        margin-top: 0px;
+    }
 
     .heroSection {
-        margin: 1rem auto;
+        margin: 95px auto -20px auto;
 
         .imageContainer {
             width: 100%;
