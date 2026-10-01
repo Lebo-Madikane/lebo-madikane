@@ -6,6 +6,7 @@ import Header from '@/components/Header/Header'
 import Contact from '@/components/Contact/Contact'
 import Footer from '@/components/Footer/Footer'
 import Modal from '@/components/Modal/Modal'
+import Card from '@/components/UI/Card/Card';
 import LetsWorkTogetherForm from "@/components/Forms/LetsWorkTogetherForm/LetsWorkTogetherForm";
 
 export default function BlogClient() {
@@ -20,8 +21,16 @@ export default function BlogClient() {
             <Header />
             <div className={styles.blogPage}>
                 <div className={styles.blogContainer}>
-                    <h1>BLOG PAGE</h1>
-                    <p>Articles publishing soon!</p>
+                    <div className={styles.textContent}>
+                        <h1>BLOG PAGE</h1>
+                        <p>Articles publishing soon! PAGE UNDER DEVELOPMENT.</p>
+                    </div>
+                    <div className={styles.blogCardsContainer}>
+                        <Card className={styles.blogCards}></Card>
+                        <Card className={styles.blogCards}></Card>
+                        <Card className={styles.blogCards}></Card>
+                        <Card className={styles.blogCards}></Card>
+                    </div>
                 </div>
             </div>
             <Contact onContactClick={() => openModal('contact')} />

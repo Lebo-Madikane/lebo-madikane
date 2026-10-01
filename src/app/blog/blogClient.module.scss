@@ -18,6 +18,7 @@
     padding: 10px;
     background-color: var(--white);
     animation: fadeIn 0.8s ease-out both;
+    border: 2px solid red;
 
     @include mobile {
         margin-bottom: 370px;
@@ -28,4 +29,23 @@
     padding: 10px;
     align-content: center;
     text-align: center;
+    border: 2px solid green;
+}
+
+.textContent {
+    border: 2px solid red;
+}
+
+.blogCardsContainer {
+    width: 60%;
+    margin: 4rem auto;
+    @include flex-center;
+    gap: 2rem;
+    border: 2px solid blue;
+}
+
+.blogCards {
+    width: 260px !important;
+    min-height: 200px;
+    border: 2px solid yellow !important;
 }
