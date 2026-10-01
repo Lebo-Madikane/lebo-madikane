@@ -15,10 +15,8 @@
     width: 100%;
     margin-top: 85px;
     margin-bottom: 420px;
-    padding: 10px;
     background-color: var(--white);
     animation: fadeIn 0.8s ease-out both;
-    border: 2px solid red;
 
     @include mobile {
         margin-bottom: 370px;
@@ -26,14 +24,53 @@
 }
 
 .blogContainer {
-    padding: 10px;
     align-content: center;
     text-align: center;
-    border: 2px solid green;
+}
+
+.blogHero {
+    width: 100%;
+    height: 400px;
+    background-image: url('/images/blog/blogPageHeroImg.svg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 2px solid black;
 }
 
 .textContent {
-    border: 2px solid red;
+    width: 50%;
+    height: 100%;
+    padding-left: 4rem;
+    color: white;
+    align-content: center;
+    text-align: left;
+
+    .topText {
+        color: var(--accent);
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .hOne {
+        color: #ffffff;
+        line-height: 1.2;
+        margin-bottom: 8px;
+
+            .hOneBottom {
+                color: var(--accent);
+            }
+    }
+
+    .underLiner {
+        width: 60px;
+        margin: 20px 0;
+        border-bottom: 3px solid var(--accent);
+    }
+
+    .bottomtext {
+        opacity: 0.79;
+    }
 }
 
 .blogCardsContainer {

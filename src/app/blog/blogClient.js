@@ -21,9 +21,16 @@ export default function BlogClient() {
             <Header />
             <div className={styles.blogPage}>
                 <div className={styles.blogContainer}>
-                    <div className={styles.textContent}>
-                        <h1>BLOG PAGE</h1>
-                        <p>Articles publishing soon! PAGE UNDER DEVELOPMENT.</p>
+                    <div className={styles.blogHero} >
+                        <div className={styles.textContent}>
+                            <p className={styles.topText}>BLOG</p>
+                            <h1 className={styles.hOne}>Articles &<br/>
+                                <span className={styles.hOneBottom}>Tech Guides</span>
+                            </h1>
+                            <p>Practical guides and insights on web development, from Linux, tools and everything I'm learning along the way.</p>
+                            <div className={styles.underLiner}></div>
+                            <p className={styles.bottomtext}>LEARN / BUILD / GROW</p>
+                        </div>
                     </div>
                     <div className={styles.blogCardsContainer}>
                         <Card className={styles.blogCards}></Card>
