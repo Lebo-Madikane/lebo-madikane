@@ -73,16 +73,35 @@
     }
 }
 
-.blogCardsContainer {
-    width: 60%;
+.blogCardContainer {
+    width: 70%;
     margin: 4rem auto;
     @include flex-center;
     gap: 2rem;
     border: 2px solid blue;
 }
 
-.blogCards {
-    width: 260px !important;
-    min-height: 200px;
+.blogCard {
+    width: 300px !important;
+    min-height: 350px;
+    position: relative;
     border: 2px solid yellow !important;
+
+    .blogCardImage {
+        width: 100%;
+        height: 150px;
+        border-radius: 16px 16px 0px 0px;
+        position: relative;
+        border: 2px solid red;
+    }
+
+    .blogCardName {
+        font-size: 0.8rem;
+        padding: 4px 18px;
+        border-radius: 16px;
+        background-color: var(--accent);
+        position: absolute;
+        left: 20;
+        top: 20;
+    }
 }

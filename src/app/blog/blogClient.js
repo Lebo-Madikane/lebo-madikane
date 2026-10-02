@@ -7,6 +7,8 @@ import Contact from '@/components/Contact/Contact'
 import Footer from '@/components/Footer/Footer'
 import Modal from '@/components/Modal/Modal'
 import Card from '@/components/UI/Card/Card';
+import Image from 'next/image';
+import Button from '@/components/UI/Button/Button';
 import LetsWorkTogetherForm from "@/components/Forms/LetsWorkTogetherForm/LetsWorkTogetherForm";
 
 export default function BlogClient() {
@@ -15,6 +17,18 @@ export default function BlogClient() {
 
     const openModal = (modalName) => setActiveModal(modalName);
     const closeModal = () => setActiveModal(null);
+
+    // Blog cards info
+    const blogCardInfo = [
+        {
+            id: 1,
+            name: "LINUX",
+            image: "/images/blog/blogPageCards/linux.svg",
+            heading: "Linux Basics",
+            paragraph: "Learn the fundamentals of Linux, from navigating the command line to managing files and permissions. Perfect for begin",
+            date: "Publishing soon"
+        }
+    ]
 
     return (
         <>
@@ -32,11 +46,21 @@ export default function BlogClient() {
                             <p className={styles.bottomtext}>LEARN / BUILD / GROW</p>
                         </div>
                     </div>
-                    <div className={styles.blogCardsContainer}>
-                        <Card className={styles.blogCards}></Card>
-                        <Card className={styles.blogCards}></Card>
-                        <Card className={styles.blogCards}></Card>
-                        <Card className={styles.blogCards}></Card>
+                    <div className={styles.blogCardContainer}>
+                        {blogCardInfo.map((blogCard) => (
+                            <div key={blogCard.id}>
+                                <Card className={styles.blogCard}>
+                                    <Image className={styles.blogCardImage} src={blogCard.image} alt="Linux Card Image" width={150} height={100} priority={true} />
+                                    <span className={styles.blogCardName}>{blogCard.name}</span>
+                                    <h4>{blogCard.heading}</h4>
+                                    <p>{blogCard.paragraph}</p>
+                                    <div>
+                                        <span>{blogCard.date}</span>
+                                        <Button variant='tertiary'>Read More</Button>
+                                    </div>
+                                </Card>
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
