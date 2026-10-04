@@ -52,9 +52,9 @@ export default function BlogClient() {
                                 <Card className={styles.blogCard}>
                                     <Image className={styles.blogCardImage} src={blogCard.image} alt="Linux Card Image" width={150} height={100} priority={true} />
                                     <span className={styles.blogCardName}>{blogCard.name}</span>
-                                    <h4>{blogCard.heading}</h4>
-                                    <p>{blogCard.paragraph}</p>
-                                    <div>
+                                    <h4 className={styles.heading}>{blogCard.heading}</h4>
+                                    <p className={styles.paragraph}>{blogCard.paragraph}</p>
+                                    <div className={styles.cardCta}>
                                         <span>{blogCard.date}</span>
                                         <Button variant='tertiary'>Read More</Button>
                                     </div>

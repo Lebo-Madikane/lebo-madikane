@@ -85,6 +85,7 @@
     width: 300px !important;
     min-height: 350px;
     position: relative;
+    text-align: left;
     border: 2px solid yellow !important;
 
     .blogCardImage {
@@ -97,11 +98,26 @@
 
     .blogCardName {
         font-size: 0.8rem;
-        padding: 4px 18px;
+        padding: 2px 15px;
         border-radius: 16px;
         background-color: var(--accent);
         position: absolute;
         left: 20;
         top: 20;
+    }
+
+    .heading {
+        color: #000000;
+        margin: 5px;
+    } 
+
+    .paragraph {
+        font-size: 0.8rem;
+        padding: 5px;
+    }
+
+    .cardCta {
+        font-size: 0.8rem;
+        border: 2px solid yellow;
     }
 }
