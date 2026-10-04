@@ -7,6 +7,8 @@ import Contact from '@/components/Contact/Contact'
 import Footer from '@/components/Footer/Footer'
 import Modal from '@/components/Modal/Modal'
 import Card from '@/components/UI/Card/Card';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import Button from '@/components/UI/Button/Button';
 import LetsWorkTogetherForm from "@/components/Forms/LetsWorkTogetherForm/LetsWorkTogetherForm";
@@ -26,6 +28,30 @@ export default function BlogClient() {
             image: "/images/blog/blogPageCards/linux.svg",
             heading: "Linux Basics",
             paragraph: "Learn the fundamentals of Linux, from navigating the command line to managing files and permissions. Perfect for begin",
+            date: "Publishing soon"
+        },
+        {
+            id: 2,
+            name: "HTML",
+            image: "/images/blog/blogPageCards/html.jpg",
+            heading: "HTML Foundations",
+            paragraph: "Understand the building blocks of the web. This guide covers HTML structure, elements, attributes, and best practices.",
+            date: "Publishing soon"
+        },
+        {
+            id: 3,
+            name: "CSS",
+            image: "/images/blog/blogPageCards/css.jpg",
+            heading: "CSS Basics",
+            paragraph: "Style your websites with confidence. Learn how to use selectors, properties, and flexbox to create modern responsive layouts.",
+            date: "Publishing soon"
+        },
+        {
+            id: 4,
+            name: "JAVASCRIPT",
+            image: "/images/blog/blogPageCards/js.svg",
+            heading: "JavaScript for beginners",
+            paragraph: "Get started with JavaScript and learn how to make your web pages interactive. We'll cover variables, functions, and more.",
             date: "Publishing soon"
         }
     ]
@@ -56,7 +82,7 @@ export default function BlogClient() {
                                     <p className={styles.paragraph}>{blogCard.paragraph}</p>
                                     <div className={styles.cardCta}>
                                         <span>{blogCard.date}</span>
-                                        <Button variant='tertiary'>Read More</Button>
+                                        <Button variant='tertiary' className={styles.button}>Read More <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
                                     </div>
                                 </Card>
                             </div>
