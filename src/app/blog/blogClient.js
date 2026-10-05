@@ -8,7 +8,7 @@ import Footer from '@/components/Footer/Footer'
 import Modal from '@/components/Modal/Modal'
 import Card from '@/components/UI/Card/Card';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faArrowRight, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
 import Button from '@/components/UI/Button/Button';
 import LetsWorkTogetherForm from "@/components/Forms/LetsWorkTogetherForm/LetsWorkTogetherForm";
@@ -72,6 +72,10 @@ export default function BlogClient() {
                             <p className={styles.bottomtext}>LEARN / BUILD / GROW</p>
                         </div>
                     </div>
+                    <div className={styles.blogHeader}>
+                        <p>FEATURED ARTICLES</p>
+                        <h2>Start With These</h2>
+                    </div>
                     <div className={styles.blogCardContainer}>
                         {blogCardInfo.map((blogCard) => (
                             <div key={blogCard.id}>
@@ -87,6 +91,31 @@ export default function BlogClient() {
                                 </Card>
                             </div>
                         ))}
+                    </div>
+                    <div className={styles.blogEmailList}>
+                        <div className={styles.blogEmailListText}>
+                            <p className={styles.blogEmailP}>STAY UPDATED</p>
+                            <h3>Get the latest articles straight to your inbox.</h3>
+                            <p className={styles.blogEmailPTwo}>Be the first to know when I publish new guides.</p>
+                        </div>
+                        <div className={styles.blogEmailInput}>
+                            <div className={styles.formEmail}>
+                                <label htmlFor="email" className={styles.formLabel}>
+                                </label>
+                                <input
+                                    type="email"
+                                    id="email"
+                                    name="email"
+                                    //value={formData.email}
+                                    //onChange={handleChange}
+                                    className={styles.formInput}
+                                    placeholder="Your email address"
+                                    required
+                                    //disabled={isSubmitting}
+                                />
+                            </div>
+                            <Button>Subscribe <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                        </div>
                     </div>
                 </div>
             </div>

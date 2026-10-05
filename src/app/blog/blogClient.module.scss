@@ -73,22 +73,37 @@
     }
 }
 
+.blogHeader {
+    width: 850px;
+    margin: 4rem auto 0 auto;
+    text-align: left;
+
+    p{
+        font-size: 0.85rem;
+        opacity: 0.79;
+    }
+
+    h2{
+        color: var(--obsidian)
+    }
+}
+
 .blogCardContainer {
-    width: 70%;
-    margin: 4rem auto;
+    width: 850px;
+    margin: 2rem auto;
     @include flex-center;
     gap: 2rem;
 }
 
 .blogCard {
-    width: 300px !important;
-    min-height: 350px;
+    width: 400px !important;
+    min-height: 360px;
     position: relative;
     text-align: left;
 
     .blogCardImage {
         width: 100%;
-        height: 180px;
+        height: 190px;
         border-radius: 16px 16px 0px 0px;
         position: relative;
     }
@@ -130,6 +145,74 @@
             .icon {
                 margin-left: 3px;
             }
+        }
+    }
+}
+
+.blogEmailList {
+    width: 834px;
+    min-height: 150px;
+    margin: 4rem auto;
+    padding: 10px;
+    border: 2px solid #000000;
+    background-color: #000000;
+    border-radius: 16px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .blogEmailListText {
+        flex: 1;
+        text-align: start;
+        color: #ffffff;
+
+        .blogEmailP {
+            font-size: 0.8rem;
+            color: var(--accent);
+        }
+
+        h3 {
+            width: 80%;
+            color: #ffffff;
+            line-height: 1.3;
+        }
+
+        .blogEmailPTwo {
+            font-size: 0.8rem;
+            opacity: 0.79;
+        }
+    }
+
+    .blogEmailInput {
+        flex: 0.8;
+        display: flex;
+        gap: 0.5rem;
+
+        .formEmail {
+            position: relative;
+            flex: 1.5;
+            height: 50px;
+            border-radius: 6px;
+            border: 0.5px solid var(--accent);
+            background: #e8c54715;
+        }
+        
+        .formInput {
+            width: 100%;
+            height: 100%;
+            padding: 5px;
+            border: none;
+            background: transparent;
+        
+            &::placeholder {
+                font-size: 0.9rem;
+                padding: 5px;
+            }
+        }
+
+        Button {
+            flex: 0.5;
+            border-radius: 6px;
         }
     }
 }
