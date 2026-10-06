@@ -17,10 +17,6 @@
     margin-bottom: 420px;
     background-color: var(--white);
     animation: fadeIn 0.8s ease-out both;
-
-    @include mobile {
-        margin-bottom: 370px;
-    }
 }
 
 .blogContainer {
@@ -214,5 +210,26 @@
             flex: 0.5;
             border-radius: 6px;
         }
+    }
+}
+
+// Mobile Responsive Design
+
+@include mobile {
+
+    .blogPage {
+        margin-bottom: 370px;
+        border: 2px solid red;
+    }
+
+    .blogHero {
+        height: 310px;
+        align-content: center;
+    }
+
+    .textContent {
+        width: 100%;
+        padding-left: 1rem;
+        height: fit-content;
     }
 }
