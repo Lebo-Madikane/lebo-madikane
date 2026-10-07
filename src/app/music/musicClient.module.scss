@@ -43,6 +43,10 @@
             height: 100%;
             object-fit: contain;
         }
+
+        .musicPageHeroMobile {
+            display: none;
+        }
     }
 }
 
@@ -267,19 +271,46 @@
         .imageContainer {
             width: 100%;
             height: fit-content;
+
+            .img {
+                display: none;
+            }
+
+            .musicPageHeroMobile {
+                display: inline-block;
+            }
         }
     }
 
     .bioSection {
+        margin: 1.5rem auto;
 
         .bioContainer {
             width: 100%;
-            padding: 15px;
+            padding: 5px;
             flex-direction: column;
+
+            .artistBioHeading {
+                h2 {
+                    margin-bottom: -1rem;
+                }
+            }
+
+            .artistBio {
+
+                h4 {
+                    margin-bottom: 0.6rem;
+                }
+
+                .btnsContainer {
+                    margin-top: 1.5rem;
+                }
+            }
         }
     }
 
     .soundHireSection {
+        margin: 3rem auto;
         padding: 10px 0px;
 
         .soundHireContainer {
@@ -290,12 +321,14 @@
     }
 
     .collaborationSection {
+        margin: 3rem auto;
+        text-align: left;
+        padding: 5px;
 
         .collaborationContainer {
 
             .secondP {
                 width: 100%;
-                padding: 15px;
             }
 
             .cta {

@@ -29,6 +29,7 @@ export default function MusicClient() {
                     <div className={styles.heroSection}>
                         <div className={styles.imageContainer}>
                             <Image className={styles.img} src='/images/music/musicPageHero.svg' alt="Lebo Image" width={150} height={100} priority={true} />
+                            <Image className={`${styles.musicPageHeroMobile} ${styles.img}`} src='/images/music/musicPageHeroMobile.svg' alt="Lebo Image" width={150} height={100} priority={true} />
                         </div>
                     </div>
                     <div className={styles.bioSection}>
