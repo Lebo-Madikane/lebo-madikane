@@ -78,7 +78,7 @@ export default function BlogClient() {
                     </div>
                     <div className={styles.blogCardContainer}>
                         {blogCardInfo.map((blogCard) => (
-                            <div key={blogCard.id}>
+                            <div className={styles.blogCardPlacemenet} key={blogCard.id}>
                                 <Card className={styles.blogCard}>
                                     <Image className={styles.blogCardImage} src={blogCard.image} alt="Linux Card Image" width={150} height={100} priority={true} />
                                     <span className={styles.blogCardName}>{blogCard.name}</span>
