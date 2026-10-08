@@ -73,8 +73,9 @@ export default function BlogClient() {
                         </div>
                     </div>
                     <div className={styles.blogHeader}>
-                        <p>FEATURED ARTICLES</p>
-                        <h2>Start With These</h2>
+                        <p>Publishing soon</p>
+                        <h2>Featured Articles</h2>
+                        {/* <h2>Start With These</h2> */}
                     </div>
                     <div className={styles.blogCardContainer}>
                         {blogCardInfo.map((blogCard) => (
