@@ -181,24 +181,30 @@
 
     .blogEmailInput {
         flex: 0.8;
-        display: flex;
-        gap: 0.5rem;
+
+        .successMessage, .errorMessage {
+            color: #ffffff;
+            font-size: 0.9rem;
+            text-align: left;
+        }
 
         .formEmail {
-            position: relative;
-            flex: 1.5;
+            display: flex;
+        }
+
+        .form {
+            display: inline-flex;
+            flex: 0.9;
             height: 50px;
-            border-radius: 6px;
-            border: 0.5px solid var(--accent);
-            background: #e8c54715;
         }
         
         .formInput {
             width: 100%;
             height: 100%;
             padding: 5px;
-            border: none;
-            background: transparent;
+            border-radius: 6px;
+            border: 0.5px solid var(--accent);
+            background: #e8c54715;
         
             &::placeholder {
                 font-size: 0.9rem;
@@ -209,6 +215,7 @@
         Button {
             flex: 0.5;
             border-radius: 6px;
+            margin-left: 0.5rem;
         }
     }
 }

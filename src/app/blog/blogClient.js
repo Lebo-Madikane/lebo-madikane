@@ -54,7 +54,84 @@ export default function BlogClient() {
             paragraph: "Get started with JavaScript and learn how to make your web pages interactive. We'll cover variables, functions, and more.",
             date: "Publishing soon"
         }
-    ]
+    ];
+
+    //email list form submission code
+    
+    const [formData, setFormData] = useState({
+        email: '',
+    });
+
+    const [isSubmitting, setIsSubmitting] = useState(false);
+    const [submitStatus, setSubmitStatus] = useState(null);
+
+    const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwEqKjegsPFj3yZpAb-uaqT7UAoqqQxqgKt6d-C8o7EvpW7TsY1e1lNCWcD0sggeXgv3Q/exec';
+
+    const handleChange = (e) => {
+        setFormData({
+            ...formData,
+            [e.target.name]: e.target.value
+        });
+
+        if (submitStatus) {
+            setSubmitStatus(null);
+        }
+    };
+
+    const validateForm = () => {
+        const { email } = formData;
+
+        if (!email.trim()) {
+            return 'Please fill in all required fields.';
+        }
+
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRegex.test(email)) {
+            return 'Please enter a valid email address.';
+        }
+
+        return null;
+    };
+
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+
+        const validationError = validateForm();
+        if (validationError) {
+            alert(validationError);
+            return;
+        }
+
+        setIsSubmitting(true);
+        setSubmitStatus(null);
+
+        try {
+
+            const response = await fetch(GOOGLE_SCRIPT_URL, {
+                method: 'POST',
+                headers: { 'Content-Type': 'text/plain' },
+                body: JSON.stringify({
+                    formType: 'emailList',
+                    email: formData.email,
+                })
+            });
+
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                setSubmitStatus('success');
+                setFormData({ email: '' });
+            } else {
+                setSubmitStatus('error');
+            }
+
+        } catch (error) {
+            setSubmitStatus('error');
+            console.error('Submission error:', error);
+        } finally {
+            setIsSubmitting(false);
+        }
+    };
 
     return (
         <>
@@ -100,22 +177,34 @@ export default function BlogClient() {
                             <p className={styles.blogEmailPTwo}>Be the first to know when I publish new guides.</p>
                         </div>
                         <div className={styles.blogEmailInput}>
+                            {/* Status Messages */}
+                            {submitStatus === 'success' && (
+                                <div className={styles.successMessage}>
+                                    ✅ Thank you! We've received your request.
+                                </div>
+                            )}
+                            {submitStatus === 'error' && (
+                                <div className={styles.errorMessage}>
+                                    ❌ Something went wrong while submitting your request. Please try again or contact us directly.
+                                </div>
+                            )}
                             <div className={styles.formEmail}>
-                                <label htmlFor="email" className={styles.formLabel}>
-                                </label>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    name="email"
-                                    //value={formData.email}
-                                    //onChange={handleChange}
-                                    className={styles.formInput}
-                                    placeholder="Your email address"
-                                    required
-                                    //disabled={isSubmitting}
-                                />
+                                <form className={styles.form} onSubmit={handleSubmit}>
+                                    <label htmlFor="email" className={styles.formLabel}>
+                                    </label>
+                                    <input
+                                        type="email"
+                                        id="email"
+                                        name="email"
+                                        value={formData.email}
+                                        onChange={handleChange}
+                                        className={styles.formInput}
+                                        placeholder="Your email address"
+                                        required
+                                        disabled={isSubmitting} />
+                                    <Button type='submit' disabled={isSubmitting}>{isSubmitting ? 'Sending Request...' : 'Subscribe'}<FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
+                                </form>
                             </div>
-                            <Button>Subscribe <FontAwesomeIcon className={styles.icon} icon={faArrowRight} /></Button>
                         </div>
                     </div>
                 </div>
