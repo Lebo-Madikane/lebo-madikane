@@ -173,8 +173,8 @@ export default function BlogClient() {
                     <div className={styles.blogEmailList}>
                         <div className={styles.blogEmailListText}>
                             <p className={styles.blogEmailP}>STAY UPDATED</p>
-                            <h3>Get the latest articles straight to your inbox.</h3>
-                            <p className={styles.blogEmailPTwo}>Be the first to know when I publish new guides.</p>
+                            <h3>Get articles straight to your inbox.</h3>
+                            <p className={styles.blogEmailPTwo}>Be the first to know when I publish.</p>
                         </div>
                         <div className={styles.blogEmailInput}>
                             {/* Status Messages */}
