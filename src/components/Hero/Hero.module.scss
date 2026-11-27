@@ -1,22 +1,34 @@
 @use '../../styles/variables' as *;
 @use '../../styles/mixins' as *;
 
+// Height of the fixed header. Keep in sync with your Header component.
+$hero-offset: 85px;
+
 .hero {
     width: 100%;
-    height: calc(100vh - 85px);
-    margin-top: 85px;
+    height: calc(100vh - #{$hero-offset});
+    margin-top: $hero-offset;
     position: relative;
     background-color: var(--white);
 
     @include mobile {
+        // FIX 1: don't lock the hero to a fixed height on phones.
+        // Text + portrait are taller than a short in-app-browser viewport,
+        // so a fixed-height box makes the image spill out over the marquee.
+        height: auto;
         overflow-x: hidden;
     }
 }
 
 .container {
-    height: 100%;;
+    height: 100%;
 
     @include mobile {
+        height: auto;
+        // Still fills one screen when there's room, but can grow when there isn't.
+        // svh = the visible area with browser toolbars showing (iOS Safari 15.4+).
+        min-height: calc(100vh - #{$hero-offset}); // fallback
+        min-height: calc(100svh - #{$hero-offset});
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -30,10 +42,18 @@
     align-items: flex-end;
     flex-wrap: wrap;
     line-height: 1.3;
+    // FIX 3: keep the image (z-index 10) and text (z-index 19) stacking
+    // inside this box so they can never paint over the marquee below.
+    isolation: isolate;
 
     @include mobile {
         position: relative;
         width: 100%;
+        // FIX 2: size to the content instead of 94% of a fixed box.
+        height: auto;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 
     .text {
@@ -45,7 +65,7 @@
         left: 25%;
         z-index: 19;
         animation: fadeInText 2s ease-out both;
-        
+
 
         .firstP {
             font-size: 0.67rem;
@@ -82,7 +102,7 @@
             }
         }
 
-        @include mobile{
+        @include mobile {
             text-align: center;
             position: relative;
             left: 0;
@@ -90,12 +110,12 @@
         }
 
         @keyframes fadeInText {
-            from { 
-                opacity: 0; 
+            from {
+                opacity: 0;
                 transform: translateY(24px);
             }
-            to { 
-                opacity: 1; 
+            to {
+                opacity: 1;
                 transform: translateY(0px);
             }
         }
@@ -113,6 +133,14 @@
         .img {
             width: 100%;
             object-fit: contain;
+
+            @include mobile {
+                height: auto;
+                // OPTIONAL: keeps text + portrait + marquee inside one phone screen
+                // (e.g. iPhone SE). Delete these two lines if you prefer a bigger portrait.
+                max-height: 45vh; // fallback
+                max-height: 45svh;
+            }
         }
 
         @include mobile {
@@ -125,7 +153,7 @@
             from {
                 opacity: 0;
             }
-        
+
             to {
                 opacity: 1;
             }
@@ -136,8 +164,12 @@
 .attributes {
     //height: 6%;
     overflow-x: hidden;
+    // FIX 3: positioned, so it always paints after (on top of) .content.
+    position: relative;
+    // Never let the flex column squash the marquee.
+    flex-shrink: 0;
 
-    .marqueeTrack{
+    .marqueeTrack {
         display: flex;
         align-self: center;
         width: max-content;
@@ -167,12 +199,12 @@
             }
         }
     }
-    
+
     @keyframes moveLeft {
         from {
             transform: translateX(0%);
         }
-    
+
         to {
             transform: translateX(-50%);
         }
